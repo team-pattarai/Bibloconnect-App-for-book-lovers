@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Biblo->Connect</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        <a href="about.html" class="logo">Biblo->Connect</a> 
+        <ul>
+            <li><a href="home.html" id="homeLink" class="active">Home</a></li>
+            <li><a href="search.html">Search</a></li>
+            <li><a href="profile.html">Profile</a></li>
+        </ul>
+    </header>
+    <div class="background-image"></div>
+    <div class="box">
+        <span class="borderline"></span>
+        <form id="loginForm"> 
+            <h2>Sign in</h2>
+            <div class="inputbox">
+                <input type="text" id="username" required="required"> 
+                <span>Username</span>
+                <i></i>
+            </div>
+            <div class="inputbox">
+                <input type="password" id="password" required="required"> 
+                <span>Password</span>
+                <i></i>
+            </div>
+            <div class="links">
+                <a href="#">Forgot Password</a>
+                <a href="signup.html">Sign up</a> 
+            </div>
+            <input type="submit" value="Login">
+        </form>
+        <p>Don't have an account? <a href="signup.html">Sign up</a></p>
+        <p id="errorMessage" class="error-message"></p>
+    </div>
+    <script src="scripts.js"></script>
+</body>
+</html>
