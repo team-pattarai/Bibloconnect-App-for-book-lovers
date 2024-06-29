@@ -1,21 +1,19 @@
-@import url('https://fonts.googleapis.com/css2?family=Sedan+SC&display=swap');
-
 * {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
     font-family: 'Poppins', sans-serif;
-}
-
-body {
+  }
+  
+  body {
     display: flex;
     justify-content: center;
-    align-items: center;
+    align-items: center; 
     min-height: 100vh;
     background: linear-gradient(#2b1055, #7597de);
-}
-
-header {
+  }
+  
+  header {
     position: absolute;
     top: 0;
     left: 0;
@@ -24,42 +22,41 @@ header {
     display: flex;
     justify-content: space-between;
     align-items: center;
-}
-
-header .logo {
+  }
+  
+  header .logo {
     color: #fff;
     font-weight: 700;
     text-decoration: none;
     font-size: 2em;
     text-transform: uppercase;
     letter-spacing: 2px;
-}
-
-header ul {
+  }
+  
+  header ul {
     display: flex;
     justify-content: center;
     align-items: center;
-}
-
-header ul li {
+  }
+  
+  header ul li {
     list-style: none;
     margin-left: 20px;
-}
-
-header ul li a {
+  }
+  
+  header ul li a {
     text-decoration: none;
     padding: 6px 15px;
     color: #fff;
     border-radius: 20px;
-}
-
-header ul li a:hover,
-header ul li a.active {
+  }
+  
+  header ul li a:hover, header ul li a.active {
     background: #fff;
-    color: #2b1055;
-}
-
-.background-image {
+    color: #a59faf;
+  }
+  
+  .background-image {
     position: fixed;
     top: 0;
     left: 0;
@@ -68,113 +65,113 @@ header ul li a.active {
     background-image: url('pics/9.jpg');
     background-size: cover;
     background-position: center;
-    z-index: -1;
-}
-
-.box {
+    z-index: -1; 
+  }
+  
+  .box {
     position: relative;
     width: 380px;
     height: 420px;
-    background: #1c1c1c;
+    background: #cba4a4;
     border-radius: 8px;
     overflow: hidden;
-}
-
-.box::before {
+  }
+  
+  .box::before {
     content: '';
     position: absolute;
     top: -50%;
     left: -50%;
     width: 380px;
     height: 420px;
-    background: linear-gradient(0deg, transparent, transparent, #45f3ff, #45f3ff, #45f3ff);
+    background: linear-gradient(0deg,transparent,transparent,#45f3ff,#45f3ff,#45f3ff);
     z-index: 1;
     transform-origin: bottom right;
     animation: animate 6s linear infinite;
-}
-
-.box::after {
+  }
+  
+  .box::after {
     content: '';
     position: absolute;
     top: -50%;
     left: -50%;
     width: 380px;
     height: 420px;
-    background: linear-gradient(0deg, transparent, transparent, #45f3ff, #45f3ff, #45f3ff);
+    background: linear-gradient(0deg,transparent,transparent,#45f3ff,#45f3ff,#45f3ff);
     z-index: 1;
     transform-origin: bottom right;
     animation: animate 6s linear infinite;
     animation-delay: -3s;
-}
-
-.borderline {
+  }
+  
+  .borderline {
     position: absolute;
     top: 0;
     inset: 0;
-}
-
-.borderline::before {
+  }
+  
+  .borderline::before {
     content: '';
     position: absolute;
     top: -50%;
     left: -50%;
     width: 380px;
     height: 420px;
-    background: linear-gradient(0deg, transparent, transparent, #ff2770, #ff2770, #a30338);
+    background: linear-gradient(0deg,transparent,transparent,#ff2770,#ff2770,#a30338);
     z-index: 1;
     transform-origin: bottom right;
     animation: animate 6s linear infinite;
     animation-delay: -1.5s;
-}
-
-.borderline::after {
+  }
+  
+  .borderline::after {
     content: '';
     position: absolute;
     top: -50%;
     left: -50%;
     width: 380px;
     height: 420px;
-    background: linear-gradient(0deg, transparent, transparent, #ff2770, #ff2770, #a30338);
+    background: linear-gradient(0deg,transparent,transparent,#ff2770,#ff2770,#a30338);
     z-index: 1;
     transform-origin: bottom right;
     animation: animate 6s linear infinite;
     animation-delay: -4.5s;
-}
-
-@keyframes animate {
+  }
+  
+  @keyframes animate {
     0% {
-        transform: rotate(0deg);
+      transform: rotate(0deg);
     }
     100% {
-        transform: rotate(360deg);
+      transform: rotate(360deg);
     }
-}
-
-.box form {
+  }
+  
+  .box form {
     position: absolute;
     inset: 4px;
-    background: #222;
+    background: #ae8f8f;
     padding: 50px 40px;
     border-radius: 8px;
     z-index: 2;
     display: flex;
     flex-direction: column;
-}
-
-.box form h2 {
+  }
+  
+  .box form h2 {
     color: #fff;
     font-weight: 500;
     text-align: center;
     letter-spacing: 0.1em;
-}
-
-.box form .inputbox {
+  }
+  
+  .box form .inputbox {
     position: relative;
     width: 300px;
     margin-top: 35px;
-}
-
-.box form .inputbox input {
+  }
+  
+  .box form .inputbox input {
     position: relative;
     width: 100%;
     padding: 20px 10px 10px;
@@ -182,122 +179,148 @@ header ul li a.active {
     outline: none;
     border: none;
     box-shadow: none;
-    color: #23242a;
+    color: #bcc0da;
     font-size: 1em;
     letter-spacing: 0.05em;
     transition: 0.5s;
     z-index: 10;
-}
-
-.box form .inputbox span {
+  }
+  
+  .box form .inputbox span {
     position: absolute;
     left: 0;
     padding: 20px 10px 10px;
     pointer-events: none;
-    color: #8f8f8f;
+    color: #d2aeae;
     font-size: 1em;
     letter-spacing: 0.05em;
     transition: 0.5s;
-}
-
-.box form .inputbox input:valid ~ span,
-.box form .inputbox input:focus ~ span {
-    color: #45f3ff;
-    transform: translateX(0px) translateY(-34px);
+  }
+  
+  .box form .inputbox input:valid ~ span,
+  .box form .inputbox input:focus ~ span {
+    color: #fff;
     font-size: 0.75em;
-}
-
-.box form .inputbox i {
+    transform: translateY(-34px);
+  }
+  
+  .box form .inputbox::after { 
+    content: '';
     position: absolute;
     left: 0;
     bottom: 0;
     width: 100%;
     height: 2px;
-    background: #45f3ff;
-    border-radius: 4px;
+    background: linear-gradient(120deg,#ff2175,#fff500);
     transition: 0.5s;
-    pointer-events: none;
-    z-index: 9;
-}
-
-.box form .inputbox input:valid ~ i,
-.box form .inputbox input:focus ~ i {
-    height: 44px;
-}
-
-.box form .links {
-    display: flex;
-    justify-content: space-between;
-}
-
-.box form .links a {
-    margin: 10px 0;
-    font-size: 0.75em;
-    color: #8f8f8f;
-    text-decoration: none;
-}
-
-.box form .links a:hover,
-.box form .links a:nth-child(2) {
-    color: #45f3ff;
-}
-
-.box form input[type="submit"] {
+  }
+  
+  .box form .inputbox input:focus ~ .inputbox::after {
+    height: 100%;
+  }
+  
+  .box form button {
+    margin-top: 30px;
+    width: 100%;
+    padding: 10px;
+    background: linear-gradient(120deg,#ff2175,#fff500);
     border: none;
     outline: none;
-    padding: 11px 25px;
-    background: #45f3ff;
+    color: #fff;
+    font-size: 1em;
+    letter-spacing: 0.05em;
     cursor: pointer;
-    border-radius: 4px;
-    font-weight: 600;
-    width: 100px;
+    transition: 0.5s;
+  }
+  
+  .box form button:hover {
+    background: linear-gradient(120deg,#f0ff00,#ff0018);
+  }
+  
+  .box form .links {
     margin-top: 10px;
-}
-
-.box form input[type="submit"]:active {
-    opacity: 0.8;
-}
-
-.error-message {
-    color: red;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    color: #dcb5b5;
+    font-size: 0.85em;
+  }
+  
+  .box form .links a {
+    color: #fff;
+    text-decoration: none;
+    transition: 0.5s;
+  }
+  
+  .box form .links a:hover {
+    color: #ff2175;
+  }
+  
+  .error-message {
+    color: #ff0018;
+    font-size: 0.85em;
     text-align: center;
     margin-top: 10px;
-}
-
-.signup-container {
+  }
+  
+  .signup-container {
+    position: absolute;
+    inset: 0;
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    min-height: 100vh;
-}
-
-.signup-container form {
+    background: linear-gradient(#2b1055, #7597de);
+    z-index: -1;
+  }
+  
+  .signup-container h1 {
+    color: #fff;
+    font-size: 2em;
+    margin-bottom: 20px;
+  }
+  
+  .signup-container form {
+    width: 300px;
+    margin-bottom: 20px;
     display: flex;
     flex-direction: column;
-    gap: 15px;
-}
-
-.signup-container form input {
+  }
+  
+  .signup-container form input {
+    margin-bottom: 10px;
     padding: 10px;
     font-size: 1em;
-}
-
-.signup-container form button {
+  }
+  
+  .signup-container form button {
     padding: 10px;
-    font-size: 1em;
-    background-color: #45f3ff;
-    color: white;
+    background: linear-gradient(120deg,#ff2175,#fff500);
     border: none;
+    outline: none;
+    color: #fff;
+    font-size: 1em;
+    letter-spacing: 0.05em;
     cursor: pointer;
-    border-radius: 4px;
-}
-
-.signup-container form button:active {
-    opacity: 0.8;
-}
-
-.signup-container p {
-    margin-top: 15px;
-    color: white;
-}
+    transition: 0.5s; 
+  }
+  
+  .signup-container form button:hover {
+    background: linear-gradient(120deg,#f0ff00,#ff0018);
+  }
+  
+  .signup-container p {
+    color: #fff;
+    font-size: 0.85em;
+  }
+  
+  .signup-container p a {
+    color: #ff2175;
+    text-decoration: none;
+    transition: 0.5s;
+  }
+  
+  .signup-container p a:hover {
+    color: #fff;
+  }
+  

@@ -1,0 +1,310 @@
+.home .ellipse-33 {
+    border-radius: 5.4rem;
+    background: url('../assets/images/ellipse_58.jpeg') 50% / cover no-repeat;
+    margin-right: 8.1rem;
+    width: 10.8rem;
+    height: 10.8rem;
+  }
+  .home .ellipse-38 {
+    border-radius: 5.4rem;
+    background: url('../assets/images/ellipse_38.jpeg') 50% / cover no-repeat;
+    margin-right: 6.9rem;
+    width: 10.8rem;
+    height: 10.8rem;
+  }
+  .home .ellipse-49 {
+    border-radius: 5.4rem;
+    background: url('../assets/images/ellipse_49.jpeg') 50% / cover no-repeat;
+    margin-right: 8.3rem;
+    width: 10.8rem;
+    height: 10.8rem;
+  }
+  .home .ellipse-40 {
+    border-radius: 5.4rem;
+    background: url('../assets/images/ellipse_40.jpeg') 50% / cover no-repeat;
+    margin-right: 8.3rem;
+    width: 10.8rem;
+    height: 10.8rem;
+  }
+  .home .ellipse-43 {
+    border-radius: 5.4rem;
+    background: url('../assets/images/ellipse_43.jpeg') 50% / cover no-repeat;
+    margin-right: 8.3rem;
+    width: 10.8rem;
+    height: 10.8rem;
+  }
+  .home .ellipse-48 {
+    border-radius: 5.4rem;
+    background: url('../assets/images/ellipse_48.jpeg') 50% / cover no-repeat;
+    width: 10.8rem;
+    height: 10.8rem;
+  }
+  .home .container {
+    margin: 0 4.3rem 1.4rem 1.2rem;
+    display: flex;
+    flex-direction: row;
+    width: 104.5rem;
+    box-sizing: border-box;
+  }
+  .home .rectangle-56 {
+    background: #D9D9D9;
+    margin: 0 76.3rem 1.2rem 0;
+    width: 0.3rem;
+    height: 0.1rem;
+  }
+  .home .rectangle-48 {
+    border-radius: 16.9rem;
+    background: #000000;
+    position: relative;
+    width: 10.8rem;
+    height: 45.7rem;
+  }
+  .home .container-7 {
+    position: absolute;
+    top: 4rem;
+    right: 0rem;
+    width: 11.8rem;
+    height: 11rem;
+  }
+  .home .vector {
+    width: 5.3rem;
+    height: 4rem;
+  }
+  .home .iconhome-icon {
+    position: absolute;
+    top: 7.4rem;
+    right: 3.3rem;
+    display: flex;
+    width: 5.3rem;
+    height: 4rem;
+    box-sizing: border-box;
+  }
+  .home .vector-1 {
+    width: 4rem;
+    height: 4rem;
+  }
+  .home .iconbook-open-outline-icon {
+    position: absolute;
+    left: 3.9rem;
+    top: 50%;
+    translate: 0 -50%;
+    display: flex;
+    width: 4rem;
+    height: 4rem;
+    box-sizing: border-box;
+  }
+  .home .vector-2 {
+    width: 4.5rem;
+    height: 4.1rem;
+  }
+  .home .iconperson-icon {
+    position: absolute;
+    left: 3.6rem;
+    bottom: 6.4rem;
+    display: flex;
+    width: 4.5rem;
+    height: 4.1rem;
+    box-sizing: border-box;
+  }
+  .home .group-15 {
+    position: relative;
+    margin: 1.6rem 0.3rem 1.7rem 0;
+    width: 16.7rem;
+    height: 45.7rem;
+    box-sizing: border-box;
+  }
+  .home .rectangle-202 {
+    mix-blend-mode: color-burn;
+    border-radius: 0.6rem;
+    background: #D9D9D9;
+    position: absolute;
+    left: 0rem;
+    top: 0rem;
+    right: 0rem;
+    bottom: 0rem;
+    height: 100%;
+  }
+  .home .ellipse-50 {
+    border-radius: 2.8rem;
+    background: url('../assets/images/ellipse_58.jpeg') 50% / cover no-repeat;
+    margin-right: 2.1rem;
+    width: 5.6rem;
+    height: 5.6rem;
+  }
+  .home .taylor {
+    margin: 1rem 0 1.6rem 0;
+    display: inline-block;
+    overflow-wrap: break-word;
+    font-family: 'Tiro Bangla';
+    font-style: italic;
+    font-weight: 400;
+    font-size: 2.3rem;
+    color: #1A1B1C;
+  }
+  .home .container-1 {
+    display: flex;
+    flex-direction: row;
+    box-sizing: border-box;
+  }
+  .home .follow {
+    overflow-wrap: break-word;
+    font-family: 'Istok Web';
+    font-weight: 400;
+    font-size: 2.3rem;
+    color: #FFFEFE;
+  }
+  .home .frame-1321316154 {
+    border-radius: 0.5rem;
+    background: #1A1B1C;
+    margin-bottom: 0.7rem;
+    display: flex;
+    padding: 0.8rem 0rem 0.8rem 0;
+    width: 16.5rem;
+    height: fit-content;
+    box-sizing: border-box;
+  }
+  .home .container-3 {
+    border-radius: 0.6rem;
+    background: #B4B4B4;
+    position: relative;
+    margin-bottom: 3.1rem;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    padding: 1.1rem 1.4rem 1.3rem 2.8rem;
+    width: 89.4rem;
+    box-sizing: border-box;
+  }
+  .home .rectangle-79 {
+    background: url('../assets/images/rectangle_79.jpeg') 50% / contain no-repeat;
+    margin-top: 0.2rem;
+    width: 14.9rem;
+    height: 26.1rem;
+  }
+  .home .frame-1321316151 {
+    background: url('../assets/images/frame_1321316151.jpeg') 50% / cover no-repeat;
+    margin-bottom: 0rem;
+    width: 18.8rem;
+    height: 26.3rem;
+  }
+  .home .group-1840 {
+    margin-bottom: 1.6rem;
+    display: flex;
+    flex-direction: row;
+    width: 33.7rem;
+    box-sizing: border-box;
+  }
+  .home .ellipse-57 {
+    box-shadow: 0rem 0.3rem 0.3rem 0rem rgba(0, 0, 0, 0.25);
+    margin-right: 0.8rem;
+    width: 3.9rem;
+    height: 3.8rem;
+  }
+  .home .like {
+    margin: 1.3rem 0;
+    display: inline-block;
+    overflow-wrap: break-word;
+    font-family: 'Titan One';
+    font-weight: 400;
+    font-size: 1.1rem;
+    color: #000000;
+  }
+  .home .group-1838 {
+    margin-right: 2.9rem;
+    display: flex;
+    flex-direction: row;
+    box-sizing: border-box;
+  }
+  .home .ellipse-56 {
+    box-shadow: 0rem 0.3rem 0.3rem 0rem rgba(0, 0, 0, 0.25);
+    margin-right: 1rem;
+    width: 3.9rem;
+    height: 3.8rem;
+  }
+  .home .lend {
+    margin: 1.3rem 0;
+    display: inline-block;
+    overflow-wrap: break-word;
+    font-family: 'Titan One';
+    font-weight: 400;
+    font-size: 1.1rem;
+    color: #000000;
+  }
+  .home .group-1839 {
+    display: flex;
+    flex-direction: row;
+    box-sizing: border-box;
+  }
+  .home .container-4 {
+    margin: 0 0.6rem;
+    display: flex;
+    flex-direction: row;
+    align-self: flex-start;
+    width: fit-content;
+    box-sizing: border-box;
+  }
+  .home .container-6 {
+    margin-right: 5.6rem;
+    display: flex;
+    flex-direction: column;
+    box-sizing: border-box;
+  }
+  .home .about-the-book {
+    overflow-wrap: break-word;
+    font-family: 'Titan One';
+    font-weight: 400;
+    font-size: 1.5rem;
+    color: #000000;
+  }
+  .home .frame-1321316153 {
+    margin-bottom: 0.8rem;
+    display: flex;
+    align-self: flex-start;
+    box-sizing: border-box;
+  }
+  .home .wings-of-fire-by-dr-apj-abdul-kalam-is-acaptivating-autobiography-that-charts-his-journey-from-asmall-town-boy-to-one-of-indias-most-esteemed-scientists-and-its-president-through-ablend-of-personal-anecdotes-and-professional-insights-kalam-shares-his-humble-beginnings-his-passion-for-aerospace-engineering-and-his-pivotal-role-in-indias-missile-programs-the-book-is-atestament-to-resilience-hard-work-and-visionary-thinking-it-offers-aglimpse-into-the-mind-of-aman-dedicated-to-his-nation-and-inspires-readers-to-dream-big-and-persevere-wings-of-fire-is-amust-read-for-anyone-seeking-motivation-and-insight-into-the-life-of-an-extraordinary-leader {
+    margin-left: 0.1rem;
+    overflow-wrap: break-word;
+    font-family: 'Tiro Kannada';
+    font-weight: 400;
+    font-size: 1.3rem;
+    color: #000000;
+  }
+  .home .container-2 {
+    margin: 1.6rem 0 0.7rem 0;
+    display: flex;
+    flex-direction: column;
+    box-sizing: border-box;
+  }
+  .home .container-5 {
+    position: relative;
+    margin: 0 0.9rem;
+    display: flex;
+    flex-direction: row;
+    align-self: flex-start;
+    width: fit-content;
+    box-sizing: border-box;
+  }
+  .home .group-1842 {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    padding: 1.1rem 1.6rem 5.3rem 1.9rem;
+    box-sizing: border-box;
+  }
+  .home .container-8 {
+    display: flex;
+    flex-direction: row;
+    width: fit-content;
+    box-sizing: border-box;
+  }
+  .home {
+    background: url('../assets/images/home.jpeg') 50% / cover no-repeat;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 1.1rem 6.9rem 4rem 3.2rem;
+    width: 120rem;
+    box-sizing: border-box;
+  }
+  

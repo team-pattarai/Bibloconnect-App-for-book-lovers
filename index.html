@@ -1,44 +1,126 @@
 <!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Biblo->Connect</title>
-    <link rel="stylesheet" href="styles.css">
-</head>
-<body>
-    <header>
-        <a href="about.html" class="logo">Biblo->Connect</a> 
-        <ul>
-            <li><a href="home.html" id="homeLink" class="active">Home</a></li>
-            <li><a href="search.html">Search</a></li>
-            <li><a href="profile.html">Profile</a></li>
-        </ul>
-    </header>
-    <div class="background-image"></div>
-    <div class="box">
-        <span class="borderline"></span>
-        <form id="loginForm"> 
-            <h2>Sign in</h2>
-            <div class="inputbox">
-                <input type="text" id="username" required="required"> 
-                <span>Username</span>
-                <i></i>
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="initial-scale=1, width=device-width" />
+
+    <link rel="stylesheet" href="./global.css" />
+    <link rel="stylesheet" href="./index.css" />
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Titan One:wght@400&display=swap"
+    />
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Tiro Kannada:wght@400&display=swap"
+    />
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Tiro Bangla:ital,wght@1,400&display=swap"
+    />
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500&display=swap"
+    />
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Inter:ital,wght@0,400;0,500;0,700;1,200;1,600&display=swap"
+    />
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Tiro Devanagari Sanskrit:wght@400&display=swap"
+    />
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Tiro Tamil:wght@400&display=swap"
+    />
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Eloquia Text:wght@300;400;600&display=swap"
+    />
+  </head>
+  <body>
+    <div class="home">
+      <img class="home-child" alt="" src="./public/group-15.svg" />
+
+      <div class="home-item"></div>
+      <img
+        class="home-inner"
+        alt=""
+        src="./public/ellipse-33@2x.png"
+        id="ellipseImage"
+      />
+
+      <img class="ellipse-icon" alt="" src="./public/ellipse-38@2x.png" />
+
+      <img class="home-child1" alt="" src="./public/ellipse-40@2x.png" />
+
+      <img class="home-child2" alt="" src="./public/ellipse-48@2x.png" />
+
+      <img class="home-child3" alt="" src="./public/ellipse-43@2x.png" />
+
+      <img class="home-child4" alt="" src="./public/ellipse-49@2x.png" />
+
+      <div class="group-parent">
+        <div class="rectangle-parent">
+          <div class="group-child"></div>
+          <div class="frame-wrapper">
+            <div class="about-the-book-wrapper">
+              <div class="about-the-book">About the book</div>
             </div>
-            <div class="inputbox">
-                <input type="password" id="password" required="required"> 
-                <span>Password</span>
-                <i></i>
-            </div>
-            <div class="links">
-                <a href="#">Forgot Password</a>
-                <a href="signup.html">Sign up</a> 
-            </div>
-            <input type="submit" value="Login">
-        </form>
-        <p>Don't have an account? <a href="signup.html">Sign up</a></p>
-        <p id="errorMessage" class="error-message"></p>
+          </div>
+          <div class="wings-of-fire-container">
+            <p class="wings-of-fire">
+              "Wings of Fire" by Dr. APJ Abdul Kalam is a captivating
+              autobiography that charts his journey from a small-town boy to one
+              of India's most esteemed scientists and its President. Through a
+              blend of personal anecdotes and professional insights, Kalam
+              shares his humble beginnings, his passion for aerospace
+              engineering, and his pivotal role in India's missile programs.
+            </p>
+            <p class="wings-of-fire">
+              The book is a testament to resilience, hard work, and visionary
+              thinking. It offers a glimpse into the mind of a man dedicated to
+              his nation and inspires readers to dream big and persevere. "Wings
+              of Fire" is a must-read for anyone seeking motivation and insight
+              into the life of an extraordinary leader.
+            </p>
+          </div>
+          <div class="lend-parent">
+            <div class="lend">LEND</div>
+            <img class="group-item" alt="" src="./public/ellipse-56@2x.png" />
+          </div>
+          <div class="like-parent">
+            <div class="like">LIKE</div>
+            <img class="group-item" alt="" src="./public/ellipse-57@2x.png" />
+          </div>
+          <div class="rectangle-div"></div>
+          <i class="taylor">TAYLOR </i>
+          <div class="rectangle-group">
+            <img
+              class="rectangle-icon"
+              alt=""
+              src="./public/rectangle-79@2x.png"
+            />
+
+            <img
+              class="frame-icon"
+              alt=""
+              src="./public/frame-1321316151@2x.png"
+            />
+          </div>
+        </div>
+        <img class="group-child1" alt="" src="./public/ellipse-50@2x.png" />
+      </div>
     </div>
-    <script src="scripts.js"></script>
-</body>
+
+    <script>
+      var ellipseImage = document.getElementById("ellipseImage");
+      if (ellipseImage) {
+        ellipseImage.addEventListener("click", function (e) {
+          window.location.href = "./bookmark.html";
+        });
+      }
+      </script>
+  </body>
 </html>

@@ -1,34 +1,144 @@
 <!DOCTYPE html>
-<html lang="en">
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Biblo->Connect</title>
-  <link rel="stylesheet" href="styles.css">
-</head>
-<body>
-  <header>
-    <nav>
-      <a href="home.html">Home</a>
-      <a href="search.html">Search</a>
-      <a href="#">Profile</a>
-    </nav>
-  </header>
-  <main>
-    <section class="profile-info">
-      <img id="profile-picture" src="default-profile.png" alt="Profile Picture">
-      <h2><span id="user-name"></span></h2>
-      <p id="user-bio"></p>
-      <a href="#" id="edit-profile-button">Edit Profile</a>
-    </section>
-    <section class="profile-sections">
-      <button class="active" data-section="pages">Posts</button>
-      <button data-section="messages">Messages</button>
-      <button data-section="lending">Lending</button>
-    </section>
-    <section class="profile-content">
-      </section>
-  </main>
-  <script src="scripts.js"></script>
-</body>
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="initial-scale=1, width=device-width" />
+
+    <link rel="stylesheet" href="./global.css" />
+    <link rel="stylesheet" href="./profile.css" />
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Titan One:wght@400&display=swap"
+    />
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Tiro Kannada:wght@400&display=swap"
+    />
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Tiro Bangla:ital,wght@1,400&display=swap"
+    />
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500&display=swap"
+    />
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Inter:ital,wght@0,400;0,500;0,700;1,200;1,600&display=swap"
+    />
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Tiro Devanagari Sanskrit:wght@400&display=swap"
+    />
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Tiro Tamil:wght@400&display=swap"
+    />
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Eloquia Text:wght@300;400;600&display=swap"
+    />
+  </head>
+  <body>
+    <div class="profile">
+      <div class="navigation1">
+        <b class="biblo-connect1">BIBLO-&gt;CONNECT</b>
+        <div class="sign-out" id="signOutText">Sign out</div>
+      </div>
+      <img
+        class="image-6-icon"
+        alt=""
+        src="./public/image-6@2x.png"
+        id="image6"
+      />
+
+      <img class="profile-child" alt="" src="./public/group-18.svg" />
+
+      <img class="profile-item" alt="" src="./public/ellipse-33@2x.png" />
+
+      <div class="chennaitamilnaduindia-container">
+        <b class="chennaitamilnaduindia1">Chennai,Tamilnadu,India.</b>
+      </div>
+      <img class="image-5-icon1" alt="" src="./public/image-5@2x.png" />
+
+      <i class="a-room-without"
+        >“A room without books is like a body without a soul.” - Marcus Tullius
+        Cicerome</i
+      >
+      <b class="last-name">Last Name</b>
+      <b class="dob">D.O.B.</b>
+      <div class="contact1">CONTACT</div>
+      <i class="joshua">Joshua :)</i>
+      <div class="profile-inner"></div>
+      <i class="pages">Pages</i>
+      <i class="message1" id="messageText">Message</i>
+      <i class="lending" id="lendingText">Lending</i>
+      <div class="profile-child1"></div>
+      <img
+        class="profile-child2"
+        alt=""
+        src="./public/rectangle-86@2x.png"
+        id="rectangleImage"
+      />
+
+      <img class="profile-child3" alt="" src="./public/rectangle-88@2x.png" />
+
+      <img class="profile-child4" alt="" src="./public/rectangle-89@2x.png" />
+
+      <div class="profile-child5"></div>
+      <b class="last-name1">Last Name</b>
+      <img class="profile-child6" alt="" src="./public/rectangle-90@2x.png" />
+
+      <img class="profile-child7" alt="" src="./public/rectangle-91@2x.png" />
+
+      <img class="profile-child8" alt="" src="./public/rectangle-921@2x.png" />
+
+      <div class="profile-child9"></div>
+      <div class="followers">
+        <p class="p">115</p>
+        <p class="followers1">Followers</p>
+      </div>
+      <div class="following">
+        <p class="p">300</p>
+        <p class="followers1">Following</p>
+      </div>
+    </div>
+
+    <script>
+      var signOutText = document.getElementById("signOutText");
+      if (signOutText) {
+        signOutText.addEventListener("click", function (e) {
+          window.location.href = "./login-page.html";
+        });
+      }
+      
+      var image6 = document.getElementById("image6");
+      if (image6) {
+        image6.addEventListener("click", function (e) {
+          window.location.href = "./edit-profile.html";
+        });
+      }
+      
+      var messageText = document.getElementById("messageText");
+      if (messageText) {
+        messageText.addEventListener("click", function (e) {
+          window.location.href = "./message.html";
+        });
+      }
+      
+      var lendingText = document.getElementById("lendingText");
+      if (lendingText) {
+        lendingText.addEventListener("click", function (e) {
+          window.location.href = "./lending.html";
+        });
+      }
+      
+      var rectangleImage = document.getElementById("rectangleImage");
+      if (rectangleImage) {
+        rectangleImage.addEventListener("click", function (e) {
+          window.location.href = "./feed-from-profile.html";
+        });
+      }
+      </script>
+  </body>
 </html>

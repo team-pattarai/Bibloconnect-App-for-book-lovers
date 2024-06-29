@@ -1,0 +1,77 @@
+.bookmark-child {
+    position: absolute;
+    top: 107px;
+    left: calc(50% - 847px);
+    border-radius: var(--br-3xs);
+    width: 1693px;
+    height: 851px;
+  }
+  .bookmark-item {
+    position: absolute;
+    top: 133px;
+    left: 162px;
+    border-radius: 50%;
+    width: 121px;
+    height: 121px;
+    object-fit: cover;
+  }
+  .bookmark-inner {
+    position: absolute;
+    top: 275.5px;
+    left: 161.5px;
+    border-top: 1px solid var(--schemes-on-primary);
+    box-sizing: border-box;
+    width: 1501px;
+    height: 1px;
+  }
+  .elsa2 {
+    position: absolute;
+    top: 169px;
+    left: 324px;
+    font-weight: 500;
+  }
+  .bookmark-child1 {
+    position: absolute;
+    top: 322px;
+    left: calc(50% - 297px);
+    width: 594px;
+    height: 554px;
+    object-fit: cover;
+  }
+  .image-7-icon,
+  .image-8-icon {
+    position: absolute;
+    top: 540px;
+    left: 371px;
+    width: 100px;
+    height: 100px;
+    object-fit: cover;
+  }
+  .image-8-icon {
+    top: 557px;
+    left: 1449px;
+    width: 79px;
+    height: 67px;
+  }
+  .arrow-back-icon4 {
+    position: absolute;
+    top: 31px;
+    left: 29px;
+    width: 84px;
+    height: 76px;
+    cursor: pointer;
+  }
+  .bookmark {
+    width: 100%;
+    position: relative;
+    height: 1080px;
+    background-image: url(./public/contact@3x.png);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: top;
+    text-align: left;
+    font-size: 48px;
+    color: var(--schemes-on-primary);
+    font-family: var(--single-line-body-base);
+  }
+  
