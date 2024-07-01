@@ -1,0 +1,159 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="initial-scale=1, width=device-width" />
+
+    <link rel="stylesheet" href="./global.css" />
+    <link rel="stylesheet" href="./feed-from-profile.css" />
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500&display=swap"
+    />
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Tiro Bangla:ital,wght@1,400&display=swap"
+    />
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Titan One:wght@400&display=swap"
+    />
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Tiro Kannada:wght@400&display=swap"
+    />
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Inter:ital,wght@0,400;0,500;0,700;1,200;1,600&display=swap"
+    />
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Eloquia Text:wght@300;400;600&display=swap"
+    />
+  </head>
+  <body>
+    <div class="feed-from-profile">
+      <div class="navigation">
+        <img
+          class="arrow-back-icon1"
+          loading="lazy"
+          alt=""
+          src="./public/arrow-back.svg"
+          id="arrowBack"
+        />
+      </div>
+      <main class="content2">
+        <div class="header1">
+          <img
+            class="header-child"
+            loading="lazy"
+            alt=""
+            src="./public/group-18.svg"
+          />
+        </div>
+        <section class="profile-picture-parent">
+          <div class="profile-picture"></div>
+          <div class="rectangle-parent2">
+            <div class="frame-child10"></div>
+            <img
+              class="frame-child11"
+              loading="lazy"
+              alt=""
+              src="./public/ellipse-50@2x.png"
+            />
+
+            <div class="display-name">
+              <h1 class="taylor2">TAYLOR</h1>
+            </div>
+          </div>
+          <div class="book-preview-wrapper">
+            <div class="book-preview">
+              <div class="book-card">
+                <div class="book-details">
+                  <div class="rectangle-parent3">
+                    <img
+                      class="frame-child12"
+                      loading="lazy"
+                      alt=""
+                      src="./public/rectangle-79@2x.png"
+                    />
+
+                    <div class="action-buttons">
+                      <div class="like-button1">
+                        <div class="like-icon1">
+                          <img
+                            class="like-heart-icon"
+                            loading="lazy"
+                            alt=""
+                            src="./public/ellipse-57@2x.png"
+                          />
+
+                          <div class="like-count">
+                            <div class="like2">LIKE</div>
+                          </div>
+                        </div>
+                        <img
+                          class="share-icon"
+                          loading="lazy"
+                          alt=""
+                          src="./public/ellipse-56@2x.png"
+                        />
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="lend-button">
+                  <img
+                    class="lend-icon1"
+                    loading="lazy"
+                    alt=""
+                    src="./public/frame-1321316151@2x.png"
+                  />
+
+                  <div class="lend-frame">
+                    <div class="lend2">LEND</div>
+                  </div>
+                </div>
+              </div>
+              <div class="description1">
+                <div class="about-the-book-parent">
+                  <div class="about-the-book2">About the book</div>
+                  <div class="book-summary">
+                    <div class="wings-of-fire-container2">
+                      <p class="wings-of-fire2">
+                        "Wings of Fire" by Dr. APJ Abdul Kalam is a captivating
+                        autobiography that charts his journey from a small-town
+                        boy to one of India's most esteemed scientists and its
+                        President. Through a blend of personal anecdotes and
+                        professional insights, Kalam shares his humble
+                        beginnings, his passion for aerospace engineering, and
+                        his pivotal role in India's missile programs.
+                      </p>
+                      <p class="the-book-is2">
+                        The book is a testament to resilience, hard work, and
+                        visionary thinking. It offers a glimpse into the mind of
+                        a man dedicated to his nation and inspires readers to
+                        dream big and persevere. "Wings of Fire" is a must-read
+                        for anyone seeking motivation and insight into the life
+                        of an extraordinary leader.
+                      </p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </section>
+      </main>
+    </div>
+
+    <script>
+      var arrowBack = document.getElementById("arrowBack");
+      if (arrowBack) {
+        arrowBack.addEventListener("click", function (e) {
+          window.location.href = "./profile.html";
+        });
+      }
+      </script>
+  </body>
+</html>

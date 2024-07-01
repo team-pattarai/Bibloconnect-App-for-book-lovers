@@ -1,0 +1,488 @@
+.home-child {
+    width: 0.313rem;
+    height: 0.063rem;
+    position: absolute;
+    margin: 0 !important;
+    top: 13.188rem;
+    left: 19.875rem;
+    background-color: var(--color-gainsboro-200);
+  }
+  .ellipse-icon {
+    width: 10.75rem;
+    height: 10.75rem;
+    position: relative;
+    border-radius: 50%;
+    object-fit: cover;
+    cursor: pointer;
+  }
+  .ellipse-wrapper {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: flex-start;
+    padding: 0 var(--padding-lgi) 0 0;
+  }
+  .frame-child2 {
+    border-radius: 50%;
+    min-height: 10.75rem;
+  }
+  .frame-child2,
+  .frame-child3 {
+    width: 10.75rem;
+    height: 10.75rem;
+    position: relative;
+    object-fit: cover;
+  }
+  .vector-wrapper {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: flex-start;
+    padding: 0 var(--padding-3xl) 0 0;
+  }
+  .frame-child4 {
+    width: 10.75rem;
+    height: 10.75rem;
+    position: relative;
+    object-fit: cover;
+  }
+  .vector-container {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: flex-start;
+    padding: 0 var(--padding-3xl) 0 0;
+  }
+  .frame-child5 {
+    width: 10.75rem;
+    height: 10.75rem;
+    position: relative;
+    object-fit: cover;
+  }
+  .vector-frame {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: flex-start;
+    padding: 0 var(--padding-3xl) 0 0;
+  }
+  .frame-child6 {
+    height: 10.75rem;
+    width: 10.75rem;
+    position: relative;
+    object-fit: cover;
+    min-height: 10.75rem;
+  }
+  .frame-header,
+  .home-inner {
+    display: flex;
+    flex-direction: row;
+    align-items: flex-start;
+    max-width: 100%;
+  }
+  .frame-header {
+    flex: 1;
+    justify-content: space-between;
+    gap: var(--gap-xl);
+  }
+  .home-inner {
+    width: 106.875rem;
+    justify-content: flex-start;
+    padding: 0 var(--padding-lgi);
+    box-sizing: border-box;
+  }
+  .search-child {
+    align-self: stretch;
+    flex: 1;
+    position: relative;
+    max-width: 100%;
+    overflow: hidden;
+    max-height: 100%;
+    flex-shrink: 0;
+  }
+  .search1 {
+    height: 47.344rem;
+    width: 16.675rem;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: flex-start;
+    padding: var(--padding-7xl) 0 0;
+    box-sizing: border-box;
+  }
+  .rectangle-div {
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    margin: 0 !important;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    border-radius: var(--br-3xs);
+    background-color: var(--color-gainsboro-200);
+    mix-blend-mode: color-burn;
+  }
+  .frame-child7 {
+    height: 7.938rem;
+    width: 89.375rem;
+    position: relative;
+    border-radius: var(--br-3xs);
+    background-color: var(--color-darkgray);
+    display: none;
+    max-width: 100%;
+  }
+  .taylor {
+    margin: 0;
+    width: 10.25rem;
+    position: relative;
+    font-size: inherit;
+    display: inline-block;
+    font-style: italic;
+    font-weight: 400;
+    font-family: inherit;
+    flex-shrink: 0;
+    z-index: 2;
+  }
+  .frame-div {
+    align-self: stretch;
+    height: 7.938rem;
+    border-radius: var(--br-3xs);
+    background-color: var(--color-darkgray);
+    display: flex;
+    flex-direction: row;
+    align-items: flex-start;
+    justify-content: flex-start;
+    padding: var(--padding-15xl) 10.437rem;
+    box-sizing: border-box;
+    max-width: 100%;
+    z-index: 1;
+  }
+  .like-background-icon {
+    align-self: stretch;
+    height: 26.081rem;
+    max-width: 100%;
+    overflow: hidden;
+    flex-shrink: 0;
+    object-fit: cover;
+  }
+  .like,
+  .like-background-icon,
+  .like-icon {
+    position: relative;
+    z-index: 1;
+  }
+  .like-icon {
+    height: 3.813rem;
+    width: 3.938rem;
+    border-radius: 50%;
+    object-fit: cover;
+  }
+  .like {
+    display: inline-block;
+    min-width: 2.563rem;
+  }
+  .author,
+  .like-elements-row {
+    display: flex;
+    align-items: flex-start;
+    justify-content: flex-start;
+  }
+  .author {
+    flex-direction: column;
+    padding: var(--padding-xl) 0 0;
+  }
+  .like-elements-row {
+    flex-direction: row;
+    gap: var(--gap-xs);
+  }
+  .heart-icon {
+    height: 3.813rem;
+    width: 3.938rem;
+    position: relative;
+    border-radius: 50%;
+    object-fit: cover;
+    min-height: 3.813rem;
+    z-index: 1;
+  }
+  .like-label,
+  .like-word {
+    display: flex;
+    flex-direction: row;
+    align-items: flex-start;
+  }
+  .like-word {
+    flex: 1;
+    justify-content: space-between;
+    flex-shrink: 0;
+    gap: var(--gap-xl);
+  }
+  .like-label {
+    align-self: stretch;
+    justify-content: flex-end;
+    padding: 0 var(--padding-9xs) 0 var(--padding-3xs);
+  }
+  .button-content,
+  .lend-word {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+  }
+  .button-content {
+    align-self: stretch;
+    align-items: flex-end;
+    gap: var(--gap-7xl);
+  }
+  .lend-word {
+    width: 14.938rem;
+    align-items: flex-start;
+    padding: var(--padding-10xs-7) 0 0;
+    box-sizing: border-box;
+    min-width: 14.938rem;
+  }
+  .frame-icon,
+  .lend {
+    position: relative;
+    z-index: 1;
+  }
+  .frame-icon {
+    align-self: stretch;
+    height: 26.25rem;
+    max-width: 100%;
+    overflow: hidden;
+    flex-shrink: 0;
+    object-fit: cover;
+  }
+  .lend {
+    display: inline-block;
+    min-width: 3rem;
+  }
+  .lend-wrapper {
+    flex-direction: row;
+    padding: 0 var(--padding-xs);
+  }
+  .frame-parent1,
+  .lend-wrapper,
+  .like-elements {
+    display: flex;
+    align-items: flex-start;
+    justify-content: flex-start;
+  }
+  .frame-parent1 {
+    flex: 1;
+    flex-direction: column;
+    gap: var(--gap-27xl);
+    min-width: 12.188rem;
+  }
+  .like-elements {
+    width: 33.688rem;
+    flex-direction: row;
+    min-width: 33.688rem;
+    row-gap: 20px;
+    max-width: 100%;
+  }
+  .about-the-book {
+    position: relative;
+    white-space: nowrap;
+    z-index: 1;
+  }
+  .the-book-is,
+  .wings-of-fire {
+    margin: 0;
+  }
+  .wings-of-fire-container {
+    height: 24.75rem;
+    flex: 1;
+    position: relative;
+    display: inline-block;
+    max-width: 100%;
+    z-index: 1;
+  }
+  .like-button {
+    align-self: stretch;
+    display: flex;
+    flex-direction: row;
+    align-items: flex-start;
+    justify-content: flex-start;
+    padding: 0 0 0 var(--padding-11xs);
+    box-sizing: border-box;
+    max-width: 100%;
+    font-size: var(--font-size-xl);
+    font-family: var(--font-tiro-kannada);
+  }
+  .about-content {
+    align-self: stretch;
+    flex-direction: column;
+    gap: var(--gap-xs);
+  }
+  .about-content,
+  .about-description,
+  .like-container,
+  .like-container-wrapper {
+    display: flex;
+    align-items: flex-start;
+    justify-content: flex-start;
+    max-width: 100%;
+  }
+  .about-description {
+    flex: 1;
+    flex-direction: column;
+    padding: var(--padding-6xl) 0 0;
+    box-sizing: border-box;
+    min-width: 24.688rem;
+    font-size: var(--font-size-5xl);
+  }
+  .like-container,
+  .like-container-wrapper {
+    flex-direction: row;
+  }
+  .like-container {
+    flex: 1;
+    gap: var(--gap-71xl);
+  }
+  .like-container-wrapper {
+    width: 79.125rem;
+    padding: 0 var(--padding-mini);
+    box-sizing: border-box;
+    font-size: var(--font-size-lg);
+    color: var(--color-black);
+    font-family: var(--font-titan-one);
+  }
+  .frame-child8 {
+    width: 5.563rem;
+    height: 5.563rem;
+    position: absolute;
+    margin: 0 !important;
+    top: 2.188rem;
+    left: 4.75rem;
+    border-radius: var(--br-11xs);
+    object-fit: contain;
+    z-index: 3;
+  }
+  .rectangle-container {
+    flex: 1;
+    flex-direction: column;
+    padding: var(--padding-mid) var(--padding-7xl) var(--padding-65xl)
+      var(--padding-12xl);
+    box-sizing: border-box;
+    position: relative;
+    gap: var(--gap-31xl);
+    flex-shrink: 0;
+    max-width: calc(100% - 272px);
+    text-align: left;
+    font-size: var(--font-size-17xl);
+    color: var(--color-gray-300);
+    font-family: var(--font-tiro-bangla);
+  }
+  .home,
+  .rectangle-container,
+  .sidebar {
+    display: flex;
+    align-items: flex-start;
+    justify-content: flex-start;
+  }
+  .sidebar {
+    width: 109.938rem;
+    flex-direction: row;
+    gap: 0.325rem;
+    max-width: 100%;
+  }
+  .home {
+    width: 100%;
+    position: relative;
+    overflow: hidden;
+    flex-direction: column;
+    padding: var(--padding-mid) var(--padding-32xl) var(--padding-45xl);
+    box-sizing: border-box;
+    gap: 2.625rem;
+    background-image: url(./public/home@3x.png);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: top;
+    line-height: normal;
+    letter-spacing: normal;
+  }
+  @media screen and (max-width: 1200px) {
+    .button-content {
+      align-self: stretch;
+      width: auto;
+    }
+    .like-elements {
+      flex: 1;
+    }
+    .like-container {
+      flex-wrap: wrap;
+    }
+    .home {
+      padding-left: var(--padding-6xl);
+      padding-right: var(--padding-6xl);
+      box-sizing: border-box;
+    }
+  }
+  @media screen and (max-width: 1050px) {
+    .search1 {
+      display: none;
+    }
+    .taylor {
+      font-size: var(--font-size-10xl);
+    }
+    .like-elements {
+      min-width: 100%;
+    }
+    .rectangle-container {
+      padding-top: var(--padding-xl);
+      padding-bottom: var(--padding-36xl);
+      box-sizing: border-box;
+      max-width: 100%;
+    }
+  }
+  @media screen and (max-width: 750px) {
+    .frame-div {
+      padding-left: var(--padding-64xl);
+      padding-right: var(--padding-64xl);
+      box-sizing: border-box;
+    }
+    .lend-word {
+      flex: 1;
+    }
+    .like-elements {
+      flex-wrap: wrap;
+    }
+    .about-description {
+      min-width: 100%;
+    }
+    .like-container {
+      gap: var(--gap-26xl);
+    }
+    .rectangle-container {
+      gap: var(--gap-6xl);
+    }
+    .home {
+      gap: var(--gap-2xl);
+    }
+  }
+  @media screen and (max-width: 450px) {
+    .taylor {
+      font-size: var(--font-size-3xl);
+    }
+    .like-word {
+      flex-wrap: wrap;
+    }
+    .frame-parent1 {
+      gap: var(--gap-4xl);
+    }
+    .about-the-book {
+      font-size: var(--font-size-lgi);
+    }
+    .wings-of-fire-container {
+      font-size: var(--single-line-body-base-size);
+    }
+    .like-container {
+      gap: var(--gap-3xl);
+    }
+    .rectangle-container {
+      padding-bottom: var(--padding-17xl);
+      box-sizing: border-box;
+    }
+  }
+  
