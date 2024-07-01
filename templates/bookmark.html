@@ -4,8 +4,8 @@
     <meta charset="utf-8" />
     <meta name="viewport" content="initial-scale=1, width=device-width" />
 
-    <link rel="stylesheet" href="./global.css" />
-    <link rel="stylesheet" href="./bookmark.css" />
+    <link rel="stylesheet" href="{{ url_for('static',filename='css/global.css') }}" />
+    <link rel="stylesheet" href="{{ url_for('static',filename='css/bookmark.css') }}" />
     <link
       rel="stylesheet"
       href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500&display=swap"
@@ -37,39 +37,39 @@
         class="arrow-back-icon2"
         loading="lazy"
         alt=""
-        src="./public/arrow-back.svg"
+        src="{{ url_for('static',filename='public/arrow-back.svg') }}"
         id="arrowBack"
       />
 
       <main class="vector-parent">
-        <img class="frame-child13" alt="" src="./public/rectangle-204.svg" />
+        <img class="frame-child13" alt=""   src="{{ url_for('static',filename='public/rectangle-204.svg') }}" />
 
         <img
           class="frame-child14"
           loading="lazy"
           alt=""
-          src="./public/ellipse-381@2x.png"
-        />
+          src="{{ url_for('static',filename='public/ellipse-381@2x.png') }}"
+          />
 
         <img
           class="frame-child15"
           loading="lazy"
           alt=""
-          src="./public/rectangle-205@2x.png"
+          src="{{ url_for('static',filename='public/rectangle-205@2x.png') }}"
         />
 
         <img
           class="image-7-icon"
           loading="lazy"
           alt=""
-          src="./public/image-7@2x.png"
+          src="{{ url_for('static',filename='public/image-7@2x.png') }}"
         />
 
         <img
           class="image-8-icon"
           loading="lazy"
           alt=""
-          src="./public/image-8@2x.png"
+          src="{{ url_for('static',filename='public/image-8@2x.png') }}"
         />
       </main>
       <div class="bookmark-inner">
@@ -86,7 +86,7 @@
       var arrowBack = document.getElementById("arrowBack");
       if (arrowBack) {
         arrowBack.addEventListener("click", function (e) {
-          window.location.href = "./home.html";
+          window.location.href = "{{ url_for('templates',filename='home.html') }}";
         });
       }
       </script>

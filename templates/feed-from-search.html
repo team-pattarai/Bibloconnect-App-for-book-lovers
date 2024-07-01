@@ -4,8 +4,8 @@
     <meta charset="utf-8" />
     <meta name="viewport" content="initial-scale=1, width=device-width" />
 
-    <link rel="stylesheet" href="./global.css" />
-    <link rel="stylesheet" href="./feed-from-search.css" />
+    <link rel="stylesheet" href="{{ url_for('static',filename='css/global.css') }}" />
+    <link rel="stylesheet" href="{{ url_for('static',filename='css/feed-from-search.css') }}" />
     <link
       rel="stylesheet"
       href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500&display=swap"
@@ -38,7 +38,7 @@
           class="arrow-back-icon"
           loading="lazy"
           alt=""
-          src="./public/arrow-back.svg"
+          src="{{ url_for('static',filename='public/arrow-back.svg') }}"
           id="arrowBack"
         />
       </div>
@@ -48,8 +48,8 @@
             class="hero-child"
             loading="lazy"
             alt=""
-            src="./public/group-17.svg"
-          />
+            src="{{ url_for('static',filename='public/group-17.svg') }}"
+            />
         </div>
         <section class="hero-background-parent">
           <div class="hero-background"></div>
@@ -60,7 +60,8 @@
                 class="hero-title-child"
                 loading="lazy"
                 alt=""
-                src="./public/ellipse-50@2x.png"
+                src="{{ url_for('static',filename='public/ellipse-50@2x.png') }}"
+
               />
 
               <div class="taylor-wrapper">
@@ -69,10 +70,11 @@
             </div>
             <div class="hero-button">
               <button class="button">
-                <img class="star-icon" alt="" src="./public/star.svg" />
+                <img class="star-icon" alt=""                 src="{{ url_for('static',filename='public/star.svg') }}"
+ />
 
                 <div class="button1">FOLLOW</div>
-                <img class="x-icon" alt="" src="./public/x.svg" />
+                <img class="x-icon" alt=""   src="{{ url_for('static',filename='public/x.svg') }}" />
               </button>
             </div>
           </div>
@@ -85,7 +87,7 @@
                       class="feature-image-icon"
                       loading="lazy"
                       alt=""
-                      src="./public/rectangle-79@2x.png"
+                      src="{{ url_for('static',filename='public/rectangle-79@2x.png') }}"
                     />
 
                     <div class="feature-caption">
@@ -95,7 +97,7 @@
                             class="likes-icon"
                             loading="lazy"
                             alt=""
-                            src="./public/ellipse-571@2x.png"
+                            src="{{ url_for('static',filename='public/ellipse-571@2x.png') }}"
                           />
 
                           <div class="like-wrapper">
@@ -106,7 +108,7 @@
                           class="shares-icon"
                           loading="lazy"
                           alt=""
-                          src="./public/ellipse-56@2x.png"
+                          src="{{ url_for('static',filename='public/ellipse-56@2x.png') }}"
                         />
                       </div>
                     </div>
@@ -117,7 +119,7 @@
                     class="lend-icon"
                     loading="lazy"
                     alt=""
-                    src="./public/frame-1321316151@2x.png"
+                    src="{{ url_for('static',filename='public/frame-1321316151@2x.png') }}"
                   />
 
                   <div class="lend-container">
@@ -161,7 +163,7 @@
       var arrowBack = document.getElementById("arrowBack");
       if (arrowBack) {
         arrowBack.addEventListener("click", function (e) {
-          window.location.href = "./search.html";
+          window.location.href = "{{ url_for('templates',filename='feed-from-search.html') }}";
         });
       }
       </script>

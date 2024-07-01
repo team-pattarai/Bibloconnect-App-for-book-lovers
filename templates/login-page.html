@@ -4,13 +4,13 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Biblo->Connect</title>
-    <link rel="stylesheet" href="login-page.css">
+    <link rel="stylesheet" href="{{ url_for('static',filename='css/login-page.css') }}">
 </head>
 <body>
     <div class="bg-img2"></div>
     <div class="rbox">
-        <a href="login.html" class="lbutton">Login</a>
-        <a href="signup.html" class="sbutton">Signup</a>
+        <a href="{{ url_for('templates',filename='login.html') }}" class="lbutton">Login</a>
+        <a href="{{ url_for('templates',filename='signup.html') }}" class="sbutton">Signup</a>
     </div> <br>
 </body>
 </html>

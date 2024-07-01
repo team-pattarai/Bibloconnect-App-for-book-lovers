@@ -4,8 +4,8 @@
     <meta charset="utf-8" />
     <meta name="viewport" content="initial-scale=1, width=device-width" />
 
-    <link rel="stylesheet" href="./global.css" />
-    <link rel="stylesheet" href="./message-1.css" />
+    <link rel="stylesheet" href="{{ url_for('static',filename='css/global.css') }}" />
+    <link rel="stylesheet" href="{{ url_for('static',filename='css/message-1.css') }}" />
     <link
       rel="stylesheet"
       href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500&display=swap"
@@ -40,7 +40,7 @@
               class="arrow-back-icon4"
               loading="lazy"
               alt=""
-              src="./public/arrow-back.svg"
+              src="{{ url_for('static',filename='public/arrowback.svg') }}"
               id="arrowBack"
             />
 
@@ -56,7 +56,7 @@
                             class="frame-child22"
                             loading="lazy"
                             alt=""
-                            src="./public/ellipse-58-3@2x.png"
+                            src="{{ url_for('static',filename='public/ellipse-58-3@2x.png') }}"
                           />
 
                           <div class="elsa-frame">
@@ -89,7 +89,7 @@
                             <img
                               class="bottom-curve-vector-icon"
                               alt=""
-                              src="./public/bottomcurvevector.svg"
+                              src="{{ url_for('static',filename='public/bottomcurvevector.svg') }}"
                             />
                           </div>
                         </div>
@@ -97,7 +97,7 @@
                           <img
                             class="top-vector-tip-icon"
                             alt=""
-                            src="./public/topvectortip.svg"
+                            src="{{ url_for('static',filename='public/topvectortip.svg') }}"
                           />
 
                           <div class="user-tip-rect"></div>
@@ -121,7 +121,7 @@
                                       class="frame-child25"
                                       loading="lazy"
                                       alt=""
-                                      src="./public/frame-2882.svg"
+                                      src="{{ url_for('static',filename='public/frame-2882.svg') }}"
                                     />
                                   </div>
                                 </div>
@@ -139,14 +139,14 @@
                           <img
                             class="avatar-url-icon"
                             alt=""
-                            src="./public/--avatar-url@2x.png"
+                            src="{{ url_for('static',filename='public/--avatar-url@2x.png') }}"
                           />
 
                           <img
                             class="toyfaces-colored-bg-29-1-icon"
                             loading="lazy"
                             alt=""
-                            src="./public/toyfaces-colored-bg-29-1@2x.png"
+                            src="{{ url_for('static',filename='public/toyfaces-colored-bg-29-1@2x.png') }}"
                           />
                         </div>
                         <div class="online-indicator"></div>
@@ -158,7 +158,7 @@
                               class="top-vector-tip-icon1"
                               loading="lazy"
                               alt=""
-                              src="./public/topvectortip-1.svg"
+                              src="{{ url_for('static',filename='public/topvectortip-1.svg') }}"
                             />
 
                             <div class="other-tip-rect"></div>
@@ -168,7 +168,7 @@
                             class="bottom-curve-vector-icon1"
                             loading="lazy"
                             alt=""
-                            src="./public/bottomcurvevector-1.svg"
+                            src="{{ url_for('static',filename='public/bottomcurvevector-1.svg') }}"
                           />
                         </div>
                         <div class="bubble-right2">
@@ -213,7 +213,7 @@
                             <img
                               class="frame-child26"
                               alt=""
-                              src="./public/frame-2882-1.svg"
+                              src="{{ url_for('static',filename='public/frame-2882-1.svg') }}"
                             />
                           </div>
                         </div>
@@ -255,13 +255,13 @@
           </div>
         </section>
         <section class="image-grid">
-          <img class="image-grid-child" alt="" src="./public/ellipse-18.svg" />
+          <img class="image-grid-child" alt="" src="{{ url_for('static',filename='ellipse-18.svg') }}" />
 
-          <img class="image-1-icon1" alt="" src="./public/image-1@2x.png" />
+          <img class="image-1-icon1" alt="" src="{{ url_for('static',filename='public/image-1@2x.png') }}" />
 
-          <img class="image-2-icon1" alt="" src="./public/image-2@2x.png" />
+          <img class="image-2-icon1" alt="" src="{{ url_for('static',filename='public/image-2@2x.png') }}" />
 
-          <img class="image-3-icon1" alt="" src="./public/image-3@2x.png" />
+          <img class="image-3-icon1" alt="" src="{{ url_for('static',filename='public/image-3@2x.png') }}" />
         </section>
       </main>
     </div>
@@ -270,7 +270,7 @@
       var arrowBack = document.getElementById("arrowBack");
       if (arrowBack) {
         arrowBack.addEventListener("click", function (e) {
-          window.location.href = "./message.html";
+          window.location.href = "{{ url_for('templates',filename='message.html') }}";
         });
       }
       </script>
