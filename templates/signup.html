@@ -12,7 +12,7 @@
     <h1>Account Signup</h1>
     <h3>Become a member and enjoy exclusive promotions.</h3>
     <hr>
-        <form>
+        <form method="post" action="/create">
             <label for="username">Username:</label> <br>
             <input type="text" name="username" id="username">
             <label for="email">Email-address:</label> <br>
@@ -21,7 +21,7 @@
             <input type="password" name="pwd" id="pwd"> <br>
             <label for="birthday">Date of Birth:</label>
             <input type="date" id="birthday" name="birthday">
-            <button type="submit">SIGNUP</button> <br>
+            <button type="submit" value="signup">SIGNUP</button> <br>
         </form>
         <h4>Already have an account?</h4>
         <span class="su"><a href="{{ url_for('login')}}">Login</a> </span>

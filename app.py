@@ -1,7 +1,10 @@
 from flask import *
 
 app = Flask(__name__)
-
+import pymongo
+uri = "mongodb+srv://Kabilan:nalibak@bibloconnect.64evmae.mongodb.net/?retryWrites=true&w=majority&appName=BIBLOCONNECT"
+client=pymongo.MongoClient(uri)
+db=client['Biblo-Connect']
 #@app.route("/")
 #def landing():
     #return render_template("landing_page.html")
@@ -14,6 +17,34 @@ def login():
 @app.route("/signup")
 def signup():
     return render_template("signup.html")
+@app.route("/create",methods=['post'])
+def create():
+    log=db['login']
+    cred={}
+    username=request.form['username']
+    email=request.form['email']
+    password=request.form['pwd']
+    dob=request.form['birthday']
+    print(username,dob)
+    cred['email']=email
+    cred['passw']=password
+    log.insert_one(cred)
+    return render_template("signup.html")
+@app.route("/check",methods=['post'])
+def check():
+    email=request.form['email']
+    password=request.form['pwd']
+    log=db['login']
+    mail_id=log.find_one({'email':email})
+    print(mail_id)
+    if mail_id:
+        if mail_id['passw']==password:
+            return render_template("home.html")
+        else:
+            return render_template("login.html")
+
+    else:
+        return render_template("login.html")
 @app.route("/home")
 def home():
     return render_template("home.html")
