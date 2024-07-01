@@ -1,9 +1,9 @@
-from flask import Flask
+from flask import *
 
 app = Flask(__name__)
 
 @app.route("/")
-def hello_world():
-    return "<p>Hello, World!</p>"
+def landing():
+    return render_template("landing_page.html")
 if __name__ == "__main__":
     app.run(debug=True)
