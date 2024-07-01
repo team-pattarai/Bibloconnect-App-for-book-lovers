@@ -1,0 +1,99 @@
+* {
+    margin: 0;
+    padding: 0;
+    font-family: 'Poppins', sans-serif;
+    box-sizing: border-box;
+}
+
+
+
+nav {
+    position: fixed;
+    z-index: 3;
+    width: 60px; /* Small width for icons only */
+    height: 340px;
+    left: 20px;
+    top: 0;
+    bottom: 0;
+    margin: auto 0;
+    background-color: #000;
+    padding: 20px 10px;
+    border-radius: 30px;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.2);
+}
+
+
+nav ul {
+    list-style: none;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-flow: column;
+    height: 100%;
+}
+
+
+nav ul li {
+    width: 100%;
+}
+
+
+nav ul li a {
+    text-decoration: none;
+    color: #ffffff;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+    width: 100%;
+    padding: 10px;
+    transition: 0.3s all ease;
+    position: relative;
+}
+
+
+nav ul li a svg, nav ul li a i {
+    font-size: 24px; /* Set the size of the icons */
+    width: 24px;
+    height: 24px;
+    fill: #ffffff;
+    color: #ffffff; /* Ensures the color is set */
+    transition: 0.3s all ease;
+}
+
+
+nav ul li a span {
+    background-color: #000;
+    padding: 2px 15px;
+    border-radius: 30px;
+    font-weight: 500;
+    font-size: 15px;
+    visibility: hidden;
+    opacity: 0;
+    transition: 0.3s all ease;
+    color: #ffffff;
+    position: absolute;
+    left: 60px; /* Position to the right of the icon */
+    white-space: nowrap;
+}
+
+
+nav ul li a.active,
+nav ul li a:hover {
+    color: #f15627;
+}
+
+
+nav ul li a.active svg, nav ul li a.active i,
+nav ul li a:hover svg, nav ul li a:hover i {
+    fill: #f15627;
+    color: #f15627; /* Ensures the color changes on hover and active states */
+    transform: scale(1.1);
+}
+
+
+nav ul li a.active span,
+nav ul li a:hover span {
+    opacity: 1;
+    visibility: visible;
+}

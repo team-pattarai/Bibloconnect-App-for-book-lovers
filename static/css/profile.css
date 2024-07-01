@@ -573,6 +573,9 @@
   padding: 0 0 5.718rem;
   gap: 7.156rem;
   max-width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 .profile {
   width: 100%;

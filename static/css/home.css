@@ -395,7 +395,7 @@
     padding: var(--padding-mid) var(--padding-32xl) var(--padding-45xl);
     box-sizing: border-box;
     gap: 2.625rem;
-    background-image: url(./public/home@3x.png);
+    background-image: url(public/home@3x.png);
     background-size: cover;
     background-repeat: no-repeat;
     background-position: top;

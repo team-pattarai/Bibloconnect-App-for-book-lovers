@@ -6,6 +6,11 @@
 
     <link rel="stylesheet" href="{{ url_for('static',filename='css/global.css') }}" />
     <link rel="stylesheet" href="{{ url_for('static',filename='css/search.css') }}" />
+    <link rel="stylesheet" href="{{ url_for('static',filename='css/styles.css') }}" />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500&display=swap" rel="stylesheet"> 
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
     <link
       rel="stylesheet"
       href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500&display=swap"
@@ -32,6 +37,28 @@
     />
   </head>
   <body>
+    <nav id="menuBar">
+      <ul>
+        <li>
+          <a href="{{ url_for('home') }}" onclick="toggleMenu(this)">
+            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor"><path d="M12 3l10 9h-3v9h-14v-9h-3z"></path></svg>
+            <span>Home</span>
+          </a>
+        </li>
+        <li>
+          <a href="{{ url_for('search') }}" onclick="toggleMenu(this)">
+            <i class="fas fa-search"></i>
+            <span>Search</span>
+          </a>
+        </li>
+        <li>
+          <a href="{{ url_for('profile') }}" onclick="toggleMenu(this)">
+            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor"><path d="M12 12c2.203 0 4-1.797 4-4s-1.797-4-4-4-4 1.797-4 4 1.797 4 4 4zm0 2c-2.671 0-8 1.336-8 4v2h16v-2c0-2.664-5.329-4-8-4z"></path></svg>
+            <span>Profile</span>
+          </a>
+        </li>
+      </ul>
+    </nav>
     <div class="search">
       <header class="page-4">
         <section class="frame-parent">
@@ -87,14 +114,7 @@
             </div>
           </div>
           <div class="frame-group">
-            <div class="frame-container">
-              <img
-                class="frame-child"
-                loading="lazy"
-                alt=""
-                src="{{ url_for('static',filename='public/group-17.svg') }}"
-              />
-            </div>
+
             <div class="rectangle-parent">
               <div class="frame-item"></div>
               <div class="grid">
@@ -211,7 +231,7 @@
       var rectTopImage = document.getElementById("rectTopImage");
       if (rectTopImage) {
         rectTopImage.addEventListener("click", function (e) {
-          window.location.href = "{{ url_for('templates',filename='feed-from-search.html') }}";
+          window.location.href = "{{ url_for('feed') }}";
         });
       }
       </script>

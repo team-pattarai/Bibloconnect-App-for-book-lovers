@@ -339,6 +339,8 @@
   display: flex;
   align-items: flex-start;
   max-width: 100%;
+  justify-content:flex-end;
+
 }
 .rectangle-parent {
   flex: 1;
@@ -357,6 +359,9 @@
   align-self: stretch;
   flex-direction: row;
   gap: 2.031rem;
+  position: relative;
+  left: 5%;
+  
 }
 .frame-parent {
   width: 109.375rem;

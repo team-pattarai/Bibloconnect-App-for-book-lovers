@@ -2,9 +2,10 @@ from flask import *
 
 app = Flask(__name__)
 
+#@app.route("/")
+#def landing():
+    #return render_template("landing_page.html")
 @app.route("/")
-def landing():
-    return render_template("landing_page.html")
 def account():
     return render_template("login-page.html")
 @app.route("/login")

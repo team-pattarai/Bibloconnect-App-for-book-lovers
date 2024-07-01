@@ -86,7 +86,7 @@
       var arrowBack = document.getElementById("arrowBack");
       if (arrowBack) {
         arrowBack.addEventListener("click", function (e) {
-          window.location.href = "{{ url_for('templates',filename='home.html') }}";
+          window.location.href = "{{ url_for('home') }}";
         });
       }
       </script>

@@ -20,11 +20,11 @@
             <label>
                 <input type="checkbox" checked="checked" name="remember"> Remember me
             </label><br>
-            <button type="submit">LOGIN</button> <br>
+            <a href="{{ url_for('home') }}" class="log-button" >LOGIN</a> <br>
             <span class="psw"><a href="#">Forgot password?</a> </span>
         </form>
         <h4>Don't have an account?</h4>
-        <span class="su"><a href="{{ url_for('static',filename='css/login.html') }}">Signup</a> </span>
+        <span class="su"><a href="{{ url_for('signup') }}">Signup</a> </span>
     </div>
 </body>
 </html>
