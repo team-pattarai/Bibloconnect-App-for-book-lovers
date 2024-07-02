@@ -78,7 +78,7 @@ input[type="checkbox"] {
 .log-button {
     position: relative;
     left: 8rem;
-    width: 100%;
+    width: 10vw;
     padding: 20px;
     background-color: black;
     color: white;

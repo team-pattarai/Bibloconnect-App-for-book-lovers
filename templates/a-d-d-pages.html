@@ -1,0 +1,21 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Image and Text Upload</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='styles.css') }}">
+</head>
+<body>
+    <h1>Upload an Image and Enter Text</h1>
+    <form action="/upload" method="POST" enctype="multipart/form-data">
+        <label for="text">Enter Text:</label>
+        <input type="text" id="text" name="text" required>
+        <br><br>
+        <label for="image">Upload Image:</label>
+        <input type="file" id="image" name="image" accept="image/*" required>
+        <br><br>
+        <button type="submit">Submit</button>
+    </form>
+</body>
+</html>

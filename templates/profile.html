@@ -52,7 +52,7 @@
           </a>
         </li>
         <li>
-          <a href="{{ url_for('profile') }}" onclick="toggleMenu(this)">
+          <a href="{{ url_for('add') }}" onclick="toggleMenu(this)">
             <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor"><path d="M12 12c2.203 0 4-1.797 4-4s-1.797-4-4-4-4 1.797-4 4 1.797 4 4 4zm0 2c-2.671 0-8 1.336-8 4v2h16v-2c0-2.664-5.329-4-8-4z"></path></svg>
             <span>Profile</span>
           </a>
@@ -93,7 +93,9 @@
                 <div class="frame-parent4">
                   <div class="frame-parent5">
                     <div class="joshua-wrapper">
-                      <h1 class="joshua">Joshua </h1>
+                      {% if name %}
+                      <h1 class="joshua">{{ name }} </h1>
+                      {% endif %}
                     </div>
                     <div class="frame-parent6">
                       <div class="follow-buttons-wrapper">
@@ -119,8 +121,7 @@
                   </div>
                   <div class="a-room-without-books-is-like-a-parent">
                     <i class="a-room-without"
-                      >“A room without books is like a body without a soul.”
-                      - Marcus Tullius Cicerome</i
+                      >{{ about }}</i
                     >
                     <div class="location">
                       <div class="button-labels1">
@@ -132,7 +133,7 @@
                         />
                       </div>
                       <b class="chennaitamilnaduindia"
-                        >Chennai,Tamilnadu,India.</b
+                        >{{ location }}.</b
                       >
                     </div>
                   </div>
@@ -147,6 +148,9 @@
                 <div class="pages-parent">
                   <i class="pages">Pages</i>
                   <div class="page-indicator"></div>
+                  <button class="add-page-button" onclick="addPage()">
+                    +
+                  </button>
                 </div>
                 <div class="message-wrapper">
                   <i class="message" id="messageText">Message</i>

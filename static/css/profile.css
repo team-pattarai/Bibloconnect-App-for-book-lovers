@@ -2,6 +2,7 @@
   position: relative;
   line-height: 150%;
   white-space: nowrap;
+  margin-top:40px;
 }
 .biblo-connect-wrapper {
   display: flex;
@@ -9,6 +10,7 @@
   align-items: flex-start;
   justify-content: flex-start;
   padding: var(--padding-2xl) 0 0;
+  margin-bottom:50px;
 }
 .sign-out {
   text-decoration: none;
@@ -60,6 +62,7 @@
   left: 27.438rem;
   object-fit: cover;
   z-index: 1;
+  margin-right:50px;
 }
 .profile-child1 {
   width: 24.5rem;
@@ -120,6 +123,7 @@
 .followers1,
 .p {
   margin: 0;
+  margin-left:400px;
 }
 .followers {
   height: 3rem;
@@ -131,6 +135,7 @@
   font-weight: 500;
   display: inline-block;
   z-index: 1;
+  top: 5rem;
 }
 .p1 {
   white-space: pre-wrap;
@@ -138,6 +143,7 @@
 .following1,
 .p1 {
   margin: 0;
+  margin-left:400px;
 }
 .following {
   flex: 1;
@@ -146,6 +152,7 @@
   display: inline-block;
   max-width: 100%;
   z-index: 2;
+  top: 5rem;
 }
 .follow-buttons,
 .follow-buttons-wrapper {
@@ -265,6 +272,7 @@
   flex-direction: row;
   justify-content: flex-start;
   max-width: 100%;
+  bottom:20px;
 }
 .profile-picture-circle-parent {
   flex: 1;
@@ -315,6 +323,18 @@
   width: 24.625rem;
   position: relative;
   flex-shrink: 0;
+  align-items:center;
+}
+
+.add-page-button {
+  background-color:black; 
+  border: none;
+  color: white;
+  padding: 10px 20px;
+  position: relative;
+  text-decoration: none;
+  font-size: 24px;
+  border-radius:50%;
 }
 .message {
   width: 15.625rem;
@@ -472,6 +492,7 @@
   flex-shrink: 0;
   object-fit: cover;
   z-index: 1;
+  margin-right:auto;
 }
 .d-o-b-divider {
   flex: 0.9785;
@@ -500,6 +521,8 @@
   flex: 1;
   position: relative;
   max-width: 100%;
+  margin-left:200px;
+
 }
 .contact-number-input {
   height: 16.938rem;
@@ -507,6 +530,7 @@
   object-fit: cover;
   flex-shrink: 0;
   z-index: 1;
+  margin-left: 40px;
 }
 .contact-parent {
   display: flex;
@@ -514,6 +538,12 @@
   align-items: flex-start;
   justify-content: flex-start;
   min-width: 18.5rem;
+  align-items: center;
+  justify-content: flex-end;
+  width: 100%;
+  margin-left: auto;
+  min-width: 18.5rem;
+
 }
 .d-o-b-field,
 .frame-parent7,
@@ -522,6 +552,7 @@
   align-items: flex-end;
   justify-content: flex-start;
   max-width: 100%;
+  margin-right:70px;
 }
 .d-o-b-field {
   width: 72rem;
@@ -711,7 +742,11 @@
   }
   .profile-picture-circle-parent {
     gap: var(--gap-mid);
+    margin-top:20px;
   }
+
+  
+  
   .contact,
   .dob,
   .last-name,

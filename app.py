@@ -1,10 +1,16 @@
 from flask import *
 
+import gridfs
 app = Flask(__name__)
 import pymongo
+app.secret_key = 'bibloconnect'
 uri = "mongodb+srv://Kabilan:nalibak@bibloconnect.64evmae.mongodb.net/?retryWrites=true&w=majority&appName=BIBLOCONNECT"
 client=pymongo.MongoClient(uri)
+
+
 db=client['Biblo-Connect']
+fs=gridfs.GridFS(db,'post')
+bfs=gridfs.GridFS(db,'bookmarks')
 #@app.route("/")
 #def landing():
     #return render_template("landing_page.html")
@@ -28,7 +34,11 @@ def create():
     print(username,dob)
     cred['email']=email
     cred['passw']=password
-    log.insert_one(cred)
+    cred['Init']='False'
+    status=log.insert_one(cred)
+    profile=db['profile']
+    profile.insert_one({'username':username,'email':email,'dob':dob})
+    print(status)
     return render_template("signup.html")
 @app.route("/check",methods=['post'])
 def check():
@@ -37,14 +47,20 @@ def check():
     log=db['login']
     mail_id=log.find_one({'email':email})
     print(mail_id)
+    session['user_email'] = email 
     if mail_id:
         if mail_id['passw']==password:
+            if mail_id["Init"]=="False":
+                
+                return render_template("new.html",user=email)
             return render_template("home.html")
         else:
-            return render_template("login.html")
+            cred="Incorrect Credentials"
+            return render_template("login.html",cred=cred)
 
     else:
-        return render_template("login.html")
+        cred="Incorrect Credentials"
+        return render_template("login.html",cred=cred)
 @app.route("/home")
 def home():
     return render_template("home.html")
@@ -59,7 +75,14 @@ def feed():
     return render_template("feed-from-search.html")
 @app.route("/profile")
 def profile():
-    return render_template("profile.html")
+    profile=db["profile"]
+    user_email = session.get('user_email')
+    data=profile.find_one({'email':user_email})
+    print(data)
+    name=data["username"]
+    about=data["about"]
+    location=str(data["dist"])+","+str(data["state"])+","+str(data["country"])
+    return render_template("profile.html",name=name,about=about,location=location)
 @app.route("/editprofile")
 def editprofile():
     return render_template("edit-profile.html")
@@ -72,5 +95,55 @@ def message():
 @app.route("/chat")
 def chat():
     return render_template("message-1.html")
+@app.route("/createprofile")
+def createprofile ():
+    return render_template("pop-up.html")
+@app.route("/info",methods=['post'])
+def info():
+    log=db['profile']
+    cred={}
+    try:
+        username=request.form['name']
+        cred['username']=username
+    except:    
+        pass
+    country=request.form['country']
+    state=request.form['state']
+    dist=request.form['district']
+    ph=request.form['contact-number']
+    about=request.form['about']
+    user_email = session.get('user_email')
+    cred['country']=country
+    cred['state']=state
+    cred['dist']=dist
+    cred['ph_no']=ph
+    cred['about']=about
+    status=log.update_one({'email':user_email},{'$set':cred})
+    logg=db['login']
+    cred1={}
+    cred1['Init']='True'
+    if user_email:
+        status1 = logg.update_one({'email': user_email}, {"$set": cred1})
+    return render_template("home.html")
+@app.route("/addpage")
+def addpage ():
+    return render_template("a-d-d-pages.html")
+@app.route('/upload', methods=['POST'])
+def upload():
+    text = request.form['text']
+    image = request.files['image']
+    fs.put(image,filename=session.get('user_email'),text=text) 
+    return render_template("a-d-d-pages.html")
+@app.route("/add")
+def add():
+    return render_template("add.html")
+@app.route("/addbookmark")
+def addbookmark ():
+    return render_template("a-d-d-b-o-o-k-m-a-r-k.html")
+@app.route('/uploadbm', methods=['POST'])
+def uploadbm():
+    image = request.files['image']
+    bfs.put(image,filename=session.get('user_email')) 
+    return render_template("home.html")
 if __name__ == "__main__":
     app.run(debug=True)

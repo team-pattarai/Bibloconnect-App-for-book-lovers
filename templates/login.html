@@ -18,10 +18,12 @@
             <label for="password">Password:</label> <br>
             <input type="password" name="pwd" id="pwd"> <br>
             <label>
-                <input type="checkbox" checked="checked" name="remember"> Remember me
+            <input type="checkbox" checked="checked" name="remember"> Remember me
             </label><br>
-            <a href="{{ url_for('home') }}" class="log-button" >LOGIN</a>
-            <button type="submit" value="Login">LOGIN</button> <br>
+            {% if cred %}
+            <p>{{ cred }}</p>
+            {% endif %}
+            <button type="submit" class="log-button" value="Login">LOGIN</button> <br>
             <span class="psw"><a href="#">Forgot password?</a> </span>
         </form>
         <h4>Don't have an account?</h4>

@@ -1,0 +1,212 @@
+.arrow-back-icon1 {
+  height: 4.75rem;
+  width: 5.25rem;
+  position: relative;
+  cursor: pointer;
+}
+.add-bookmark1 {
+  position: relative;
+  line-height: 2.75rem;
+  white-space: pre-wrap;
+}
+.add-bookmark-wrapper {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: flex-start;
+  padding: var(--padding-3xl) 0 0;
+}
+.navigation1 {
+  width: 62.563rem;
+  display: flex;
+  flex-direction: row;
+  align-items: flex-start;
+  justify-content: space-between;
+  gap: var(--gap-xl);
+  max-width: 100%;
+}
+.image-placeholder-icon1 {
+  width: 11.2rem;
+  flex: 1;
+  position: relative;
+  max-height: 100%;
+  overflow: hidden;
+  object-fit: cover;
+  mix-blend-mode: darken;
+}
+.image-actions-child {
+  width: 20.688rem;
+  height: 4.313rem;
+  position: relative;
+  overflow: hidden;
+  flex-shrink: 0;
+  display: none;
+  max-width: 100%;
+}
+.add-image1 {
+  position: relative;
+  line-height: 2.75rem;
+}
+.image-actions,
+.star-icon3 {
+  overflow: hidden;
+  flex-shrink: 0;
+}
+.image-actions {
+  height: 47.125rem;
+  width: 42.625rem;
+  background-color: var(--color-gainsboro);
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: flex-start;
+  padding: var(--padding-272xl) var(--padding-xl) 13.75rem 15.687rem;
+  box-sizing: border-box;
+  gap: 1.625rem;
+  min-width: 42.625rem;
+  max-width: 100%;
+}
+.star-icon3 {
+  height: 1rem;
+  width: 1rem;
+  position: relative;
+  display: none;
+}
+.button7 {
+  position: relative;
+  line-height: 2.75rem;
+  display: inline-block;
+  min-width: 5.938rem;
+}
+.x-icon3 {
+  height: 1rem;
+  width: 1rem;
+  position: relative;
+  overflow: hidden;
+  flex-shrink: 0;
+  display: none;
+}
+.button-container,
+.button6 {
+  display: flex;
+  align-items: flex-start;
+}
+.button6 {
+  align-self: stretch;
+  border-radius: var(--radius-200);
+  background-color: var(--color-black);
+  border: 1px solid var(--background-brand-default);
+  overflow: hidden;
+  flex-direction: row;
+  justify-content: center;
+  padding: var(--padding-base) var(--padding-xl);
+  gap: var(--space-200);
+}
+.button-container {
+  width: 18.188rem;
+  flex-direction: column;
+  justify-content: flex-end;
+  padding: 0 0 var(--padding-sm);
+  box-sizing: border-box;
+  color: var(--text-brand-on-brand);
+}
+.image-actions-parent {
+  width: 80.625rem;
+  display: flex;
+  flex-direction: row;
+  align-items: flex-end;
+  justify-content: space-between;
+  max-width: 100%;
+  gap: var(--gap-xl);
+}
+.add-bookmark,
+.content1 {
+  display: flex;
+  align-items: flex-start;
+  text-align: left;
+  font-size: var(--m3-display-small-size);
+  font-family: var(--m3-body-small);
+}
+.content1 {
+  align-self: stretch;
+  flex-direction: row;
+  justify-content: flex-end;
+  max-width: 100%;
+  color: var(--color-gray-200);
+}
+.add-bookmark {
+  width: 100%;
+  position: relative;
+  overflow: hidden;
+  flex-direction: column;
+  justify-content: flex-start;
+  padding: var(--padding-45xl) 3.562rem 3.875rem var(--padding-82xl);
+  box-sizing: border-box;
+  gap: 7.75rem;
+  background-image: url(public/add-pages@3x.png);
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: top;
+  line-height: normal;
+  letter-spacing: normal;
+  color: var(--color-white);
+}
+@media screen and (max-width: 1125px) {
+  .image-actions {
+    flex: 1;
+  }
+  .image-actions-parent {
+    flex-wrap: wrap;
+  }
+}
+@media screen and (max-width: 1050px) {
+  .add-bookmark1,
+  .add-image1 {
+    font-size: var(--font-size-10xl);
+    line-height: 2.188rem;
+  }
+  .image-actions {
+    padding-top: var(--padding-170xl);
+    padding-bottom: 8.938rem;
+    box-sizing: border-box;
+    min-width: 100%;
+  }
+  .button7 {
+    font-size: var(--font-size-10xl);
+    line-height: 2.188rem;
+  }
+  .add-bookmark {
+    gap: 3.875rem;
+    padding-left: var(--padding-31xl);
+    padding-right: 1.75rem;
+    box-sizing: border-box;
+  }
+}
+@media screen and (max-width: 750px) {
+  .add-bookmark {
+    gap: 1.938rem;
+    padding-left: var(--padding-6xl);
+    box-sizing: border-box;
+  }
+}
+@media screen and (max-width: 450px) {
+  .add-bookmark1 {
+    font-size: var(--font-size-3xl);
+    line-height: 1.625rem;
+  }
+  .navigation1 {
+    flex-wrap: wrap;
+  }
+  .add-image1 {
+    font-size: var(--font-size-3xl);
+    line-height: 1.625rem;
+  }
+  .image-actions {
+    padding-left: 7.813rem;
+    box-sizing: border-box;
+  }
+  .button7 {
+    font-size: var(--font-size-3xl);
+    line-height: 1.625rem;
+  }
+}
