@@ -134,9 +134,6 @@ def upload():
     image = request.files['image']
     fs.put(image,filename=session.get('user_email'),text=text) 
     return render_template("a-d-d-pages.html")
-@app.route("/add")
-def add():
-    return render_template("add.html")
 @app.route("/addbookmark")
 def addbookmark ():
     return render_template("a-d-d-b-o-o-k-m-a-r-k.html")

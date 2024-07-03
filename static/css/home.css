@@ -62,9 +62,10 @@
   .vector-frame {
     display: flex;
     flex-direction: column;
-    align-items: flex-start;
+    align-items: center;
     justify-content: flex-start;
     padding: 0 var(--padding-3xl) 0 0;
+    gap:10px;
   }
   .frame-child6 {
     height: 10.75rem;
@@ -122,7 +123,10 @@
     border-radius: var(--br-3xs);
     background-color: var(--color-gainsboro-200);
     mix-blend-mode: color-burn;
+    margin-bottom:80px;
   }
+
+  
   .frame-child7 {
     height: 7.938rem;
     width: 89.375rem;
@@ -285,6 +289,7 @@
     position: relative;
     white-space: nowrap;
     z-index: 1;
+    margin-bottom:30px;
   }
   .the-book-is,
   .wings-of-fire {
@@ -297,6 +302,7 @@
     display: inline-block;
     max-width: 100%;
     z-index: 1;
+    margin-bottom:80px;
   }
   .like-button {
     align-self: stretch;
@@ -484,5 +490,29 @@
       padding-bottom: var(--padding-17xl);
       box-sizing: border-box;
     }
-  }
+    .circle-button {
+      display: block;
+      width: 40px; 
+      height: 40px; 
+      background-color: #007bff; 
+      color: #fff; 
+      border: none;
+      border-radius: 50%; 
+      cursor: pointer;
+      text-align: center;
+      line-height: 40px; 
+      font-size: 20px; 
+      margin-top: 10px; 
+     
+    }
+    
+    .ellipse-wrapper {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      margin-left:50px; 
+    }
+    
+}
+
   

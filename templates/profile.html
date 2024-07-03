@@ -52,7 +52,7 @@
           </a>
         </li>
         <li>
-          <a href="{{ url_for('add') }}" onclick="toggleMenu(this)">
+          <a href="{{ url_for('profile') }}" onclick="toggleMenu(this)">
             <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor"><path d="M12 12c2.203 0 4-1.797 4-4s-1.797-4-4-4-4 1.797-4 4 1.797 4 4 4zm0 2c-2.671 0-8 1.336-8 4v2h16v-2c0-2.664-5.329-4-8-4z"></path></svg>
             <span>Profile</span>
           </a>
@@ -69,13 +69,6 @@
         </div>
       </header>
       <div class="profile-child"></div>
-      <img
-        class="profile-item"
-        loading="lazy"
-        alt=""
-        src="{{ url_for('static',filename='public/rectangle-90@2x.png') }}"
-      />
-
       <div class="profile-child1"></div>
       <main class="profile-info-parent">
         
@@ -148,9 +141,7 @@
                 <div class="pages-parent">
                   <i class="pages">Pages</i>
                   <div class="page-indicator"></div>
-                  <button class="add-page-button" onclick="addPage()">
-                    +
-                  </button>
+                  <a href="{{ url_for('addpage')}}" class="add-page-button">+</a>
                 </div>
                 <div class="message-wrapper">
                   <i class="message" id="messageText">Message</i>
@@ -160,62 +151,21 @@
                 </div>
               </div>
             </div>
-            <div class="secondary-actions">
-              <div class="rectangle-parent5">
-                <img
-                  class="frame-child17"
-                  loading="lazy"
-                  alt=""
-                  src="{{ url_for('static',filename='public/rectangle-86@2x.png') }}"
-                  id="rectangleImage1"
-                />
-
-                <div class="follow-buttons1">
-                  <b class="last-name">Last Name</b>
-                  <img
-                    class="last-name-input"
-                    loading="lazy"
-                    alt=""
-                    src="{{ url_for('static',filename='public/rectangle-88@2x.png') }}"
-                  />
-                </div>
-                <img
-                  class="frame-child18"
-                  loading="lazy"
-                  alt=""
-                  src="{{ url_for('static',filename='public/rectangle-89@2x.png') }}"
-                />
-              </div>
-              <div class="d-o-b-field">
-                <div class="d-o-b-field-inner">
-                  <div class="dob-parent">
-                    <b class="dob">D.O.B.</b>
-                    <b class="last-name1">Last Name</b>
-                  </div>
-                </div>
-                <div class="d-o-b-divider">
-                  <img
-                    class="contact-input-icon"
-                    loading="lazy"
-                    alt=""
-                    src="{{ url_for('static',filename='public/rectangle-91@2x.png') }}"
-                  />
-                </div>
-                <div class="contact-parent">
-                  <div class="contact">CONTACT</div>
-                  <img
-                    class="contact-number-input"
-                    loading="lazy"
-                    alt=""
-                    src="{{ url_for('static',filename='public/rectangle-92@2x.png') }}"
-                  />
-                </div>
-              </div>
-            </div>
+            
+            
           </div>
         </section>
       </main>
     </div>
+
+    <div class="large-container">
+      <div class="grid-item1"><img class="imglive" src="{{ url_for('static',filename='css/Img/landing.png') }}" alt=""></div>
+      <div class="grid-item1"><img class="imglive" src="{{ url_for('static',filename='css/Img/landing.png') }}" alt=""></div>
+      <div class="grid-item1"><img class="imglive" src="{{ url_for('static',filename='css/Img/landing.png') }}" alt=""></div>
+      <div class="grid-item1"><img class="imglive" src="{{ url_for('static',filename='css/Img/landing.png') }}" alt=""></div>
+      <!-- div should be added in live updates -->
+    </div>
+
 
     <script>
       var signOutText = document.getElementById("signOutText");
