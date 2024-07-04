@@ -1,6 +1,6 @@
 <!DOCTYPE html>
 <html>
-  <head>
+<head>
     <meta charset="utf-8" />
     <meta name="viewport" content="initial-scale=1, width=device-width" />
     <link rel="stylesheet" href="{{ url_for('static',filename='css/global.css') }}" />
@@ -10,210 +10,63 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500&display=swap" rel="stylesheet"> 
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
-    <link
-      rel="stylesheet"
-      href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500&display=swap"
-    />
-    <link
-      rel="stylesheet"
-      href="https://fonts.googleapis.com/css2?family=Tiro Bangla:ital,wght@1,400&display=swap"
-    />
-    <link
-      rel="stylesheet"
-      href="https://fonts.googleapis.com/css2?family=Titan One:wght@400&display=swap"
-    />
-    <link
-      rel="stylesheet"
-      href="https://fonts.googleapis.com/css2?family=Tiro Kannada:wght@400&display=swap"
-    />
-    <link
-      rel="stylesheet"
-      href="https://fonts.googleapis.com/css2?family=Inter:ital,wght@0,400;0,500;0,700;1,200;1,600&display=swap"
-    />
-    <link
-      rel="stylesheet"
-      href="https://fonts.googleapis.com/css2?family=Eloquia Text:wght@300;400;600&display=swap"
-    />
-  </head>
-  <body>
+</head>
+<body>
     <div class="home">
-      <div class="home-child"></div>
-      <div class="home-inner">
-        <header class="frame-header">
-          <a href="#">
-          <div class="ellipse-wrapper">
-            <a href="#">
-            <img
-              class="ellipse-icon"
-              loading="lazy"
-              alt=""
-              src="{{ url_for('static',filename='public/ellipse-33@2x.png') }}"
-              id="ellipseImage"
-            />
-            </a>
-            <button class="circle-button">+</button>
-          </div>
-          <img
-            class="frame-child2"
-            loading="lazy"
-            alt=""
-            src="{{ url_for('static',filename='public/ellipse-38@2x.png') }}"
-          />
-          
-          <div class="vector-wrapper">
-            <img
-              class="frame-child3"
-              loading="lazy"
-              alt=""
-            src="{{ url_for('static',filename='public/ellipse-49@2x.png') }}"
-            />
-          </div>
-          <div class="vector-container">
-            <img
-              class="frame-child4"
-              loading="lazy"
-              alt=""
-              src="{{ url_for('static',filename='public/ellipse-40@2x.png') }}">
-          <div class="vector-frame">
-            <img
-              class="frame-child5"
-              loading="lazy"
-              alt=""
-src="{{ url_for('static',filename='public/ellipse-43@2x.png') }}">
-          <img
-            class="frame-child6"
-            loading="lazy"
-            alt=""
-            src="{{ url_for('static',filename='public/ellipse-48@2x.png') }}"
-          />
-        </header>
-      </div>
-      <main class="sidebar">
-        <div class="search1">
-          <nav id="menuBar">
-            <ul>
-              <li>
-                <a href="{{ url_for('home') }}" onclick="toggleMenu(this)">
-                  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor"><path d="M12 3l10 9h-3v9h-14v-9h-3z"></path></svg>
-                  <span>Home</span>
-                </a>
-              </li>
-              <li>
-                <a href="{{ url_for('search') }}" onclick="toggleMenu(this)">
-                  <i class="fas fa-search"></i>
-                  <span>Search</span>
-                </a>
-              </li>
-              <li>
-                <a href="{{ url_for('profile') }}" onclick="toggleMenu(this)">
-                  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor"><path d="M12 12c2.203 0 4-1.797 4-4s-1.797-4-4-4-4 1.797-4 4 1.797 4 4 4zm0 2c-2.671 0-8 1.336-8 4v2h16v-2c0-2.664-5.329-4-8-4z"></path></svg>
-                  <span>Profile</span>
-                </a>
-              </li>
-            </ul>
-          </nav>
-
-        </div>
-        <section class="rectangle-container">
-          <div class="rectangle-div"></div>
-          <div class="frame-div">
-            <div class="frame-child7"></div>
-            <h1 class="taylor">TAYLOR</h1>
-          </div>
-          <div class="like-container-wrapper">
-            <div class="like-container">
-              <div class="like-elements">
-                <div class="lend-word">
-                  <div class="button-content">
+        <div class="home-child"></div>
+        <div class="home-inner">
+            <header class="frame-header">
+                <a href="#">
+                <div class="ellipse-wrapper">
                     <img
-                      class="like-background-icon"
-                      loading="lazy"
-                      alt=""
-                      src="{{ url_for('static',filename='public/rectangle-79@2x.png') }}"
-                    />
-
-                    <div class="like-label">
-                      <div class="like-word">
-                        <div class="like-elements-row">
-                          <img
-                            class="like-icon"
-                            loading="lazy"
-                            alt=""
-                           src="{{ url_for('static',filename='public/ellipse-57@2x.png') }}"
-                          />
-
-                          <div class="author">
-                            <div class="like">LIKE</div>
-                          </div>
-                        </div>
-                        <img
-                          class="heart-icon"
-                          loading="lazy"
-                          alt=""
-                          src="{{ url_for('static',filename='public/ellipse-56@2x.png') }}"
-                        />
-                      </div>
-                    </div>
-                  </div>
-                </div>
-                <div class="frame-parent1">
-                  <img
-                    class="frame-icon"
+                    class="ellipse-icon"
                     loading="lazy"
                     alt=""
-                    src="{{ url_for('static',filename='public/frame-1321316151@2x.png') }}"
-                  />
-
-                  <div class="lend-wrapper">
-                    <div class="lend">LEND</div>
-                  </div>
+                    src="{{ url_for('static',filename='public/ellipse-33@2x.png') }}"
+                    id="ellipseImage"
+                    />
+                    <button class="circle-button">+</button>
                 </div>
-              </div>
-              <div class="about-description">
-                <div class="about-content">
-                  <div class="about-the-book">About the book</div>
-                  <div class="like-button">
-                    <div class="wings-of-fire-container">
-                      <p class="wings-of-fire">
-                        "Wings of Fire" by Dr. APJ Abdul Kalam is a captivating
-                        autobiography that charts his journey from a small-town
-                        boy to one of India's most esteemed scientists and its
-                        President. Through a blend of personal anecdotes and
-                        professional insights, Kalam shares his humble
-                        beginnings, his passion for aerospace engineering, and
-                        his pivotal role in India's missile programs.
-                      </p>
-                      <p class="the-book-is">
-                        The book is a testament to resilience, hard work, and
-                        visionary thinking. It offers a glimpse into the mind of
-                        a man dedicated to his nation and inspires readers to
-                        dream big and persevere. "Wings of Fire" is a must-read
-                        for anyone seeking motivation and insight into the life
-                        of an extraordinary leader.
-                      </p>
-                    </div>
-                  </div>
-                </div>
-              </div>
+            </header>
+        </div>
+        <main class="sidebar">
+            <div class="search1">
+                <nav id="menuBar">
+                    <ul>
+                        <li>
+                            <a href="{{ url_for('home') }}" onclick="toggleMenu(this)">
+                                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor"><path d="M12 3l10 9h-3v9h-14v-9h-3z"></path></svg>
+                                <span>Home</span>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="{{ url_for('search') }}" onclick="toggleMenu(this)">
+                                <i class="fas fa-search"></i>
+                                <span>Search</span>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="{{ url_for('profile') }}" onclick="toggleMenu(this)">
+                                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor"><path d="M12 12c2.203 0 4-1.797 4-4s-1.797-4-4-4-4 1.797-4 4 1.797 4 4 4zm0 2c-2.671 0-8 1.336-8 4v2h16v-2c0-2.664-5.329-4-8-4z"></path></svg>
+                                <span>Profile</span>
+                            </a>
+                        </li>
+                    </ul>
+                </nav>
             </div>
-          </div>
-          <img
-            class="frame-child8"
-            loading="lazy"
-            alt=""
-            src="{{ url_for('static',filename='public/ellipse-50@2x.png') }}"
-          />
-        </section>
-      </main>
+            <div class="large-container">
+              
+            </div>
+        </main>
     </div>
 
     <script>
-      var ellipseImage = document.getElementById("ellipseImage");
-      if (ellipseImage) {
-        ellipseImage.addEventListener("click", function (e) {
-          window.location.href = "{{ url_for('bookmark') }}";
-        });
-      }
-      </script>
-  </body>
+        var ellipseImage = document.getElementById("ellipseImage");
+        if (ellipseImage) {
+            ellipseImage.addEventListener("click", function (e) {
+                window.location.href = "{{ url_for('bookmark') }}";
+            });
+        }
+    </script>
+</body>
 </html>

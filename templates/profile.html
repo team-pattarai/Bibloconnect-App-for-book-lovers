@@ -159,11 +159,14 @@
     </div>
 
     <div class="large-container">
-      <div class="grid-item1"><img class="imglive" src="{{ url_for('static',filename='css/Img/landing.png') }}" alt=""></div>
-      <div class="grid-item1"><img class="imglive" src="{{ url_for('static',filename='css/Img/landing.png') }}" alt=""></div>
-      <div class="grid-item1"><img class="imglive" src="{{ url_for('static',filename='css/Img/landing.png') }}" alt=""></div>
-      <div class="grid-item1"><img class="imglive" src="{{ url_for('static',filename='css/Img/landing.png') }}" alt=""></div>
-      <!-- div should be added in live updates -->
+      {% for post in posts %}
+      <p>Post {{ loop.index }}</p>
+      <div class="grid-item1">
+          <img class="imglive" src="{{ url_for('getimg', obj_id=post) }}" alt="">
+      </div>
+  {% else %}
+      <p>No posts found.</p>
+  {% endfor %}
     </div>
 
 

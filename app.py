@@ -1,6 +1,7 @@
 from flask import *
-
+from PIL import Image
 import gridfs
+import io
 app = Flask(__name__)
 import pymongo
 app.secret_key = 'bibloconnect'
@@ -75,14 +76,42 @@ def feed():
     return render_template("feed-from-search.html")
 @app.route("/profile")
 def profile():
-    profile=db["profile"]
+    profile = db["profile"]
     user_email = session.get('user_email')
-    data=profile.find_one({'email':user_email})
-    print(data)
-    name=data["username"]
-    about=data["about"]
-    location=str(data["dist"])+","+str(data["state"])+","+str(data["country"])
-    return render_template("profile.html",name=name,about=about,location=location)
+    post = db["post.files"]
+    
+    data = profile.find_one({'email': user_email})
+    posts = list(post.find({'filename': user_email})["_id"])
+    
+    name = data["username"]
+    about = data["about"]
+    location = f"{data['dist']}, {data['state']}, {data['country']}"
+    
+    return render_template("profile.html", 
+                           name=name, 
+                           about=about, 
+                           location=location, 
+                           posts=posts)
+@app.route("/getimg/<obj_id>")
+def getimg(obj_id):
+    try:
+        image_data = fs.get(ObjectId(obj_id))
+        image = Image.open(io.BytesIO(image_data.read()))
+        
+        if image.mode == 'RGBA':
+            image = image.convert('RGB')
+        
+        img_io = io.BytesIO()
+        image.save(img_io, format='JPEG')
+        img_io.seek(0)
+        return send_file(img_io, mimetype='image/jpeg')
+    except NoFile:
+        print(f"File with id {obj_id} not found in GridFS")
+        return "Image not found", 404
+    except Exception as e:
+        print(f"Error retrieving image: {str(e)}")
+        return "Error retrieving image", 500
+
 @app.route("/editprofile")
 def editprofile():
     return render_template("edit-profile.html")
