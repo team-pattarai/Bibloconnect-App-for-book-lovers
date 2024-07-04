@@ -12,7 +12,7 @@
     <div class="prof"></div>
     <div class="prof-img"><img src="{{ url_for('static',filename='public/circle.jpg') }}" alt=""></div>
     <div class="prof-img2"><img src="{{ url_for('static',filename='public/profile.jpg') }}"alt=""></div>
-    <form method='post' action="/info">
+    <form method='post' action="/info" enctype="multipart/form-data">
         <button class="save-btn">Save</button>
         <label for="name">Username:</label> <br>
         <input type="text" name="name" id="name"> <br>
@@ -26,7 +26,8 @@
         <input type="text" name="contact-number" id="contact-number"> <br>
         <label for="about">About:</label> <br>
         <input type="text" name="about" id="about"> <br>
-        <label>
+        <label for="image">Change profile picture:</label>
+        <input type="file" id="image" name="image" accept="image/*" required><label>
     </form>
 </body>
 </html>

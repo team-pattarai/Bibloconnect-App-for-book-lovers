@@ -79,7 +79,7 @@
                 class="profile-picture-circle"
                 loading="lazy"
                 alt=""
-                src="{{ url_for('static',filename='public/ellipse-32@2x.png') }}"
+                src="{{ image }}"
               />
 
               <div class="button-labels">
@@ -160,9 +160,8 @@
 
     <div class="large-container">
       {% for post in posts %}
-      <p>Post {{ loop.index }}</p>
       <div class="grid-item1">
-          <img class="imglive" src="{{ url_for('getimg', obj_id=post) }}" alt="">
+          <img class="imglive" src="/getimg/{{ post }}" alt="">
       </div>
   {% else %}
       <p>No posts found.</p>

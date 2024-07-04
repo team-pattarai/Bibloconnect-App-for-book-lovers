@@ -1,7 +1,9 @@
 from flask import *
 from PIL import Image
 import gridfs
+from bson import ObjectId
 import io
+import base64
 app = Flask(__name__)
 import pymongo
 app.secret_key = 'bibloconnect'
@@ -11,6 +13,7 @@ client=pymongo.MongoClient(uri)
 
 db=client['Biblo-Connect']
 fs=gridfs.GridFS(db,'post')
+pfs=gridfs.GridFS(db,'profile_DP')
 bfs=gridfs.GridFS(db,'bookmarks')
 #@app.route("/")
 #def landing():
@@ -79,22 +82,42 @@ def profile():
     profile = db["profile"]
     user_email = session.get('user_email')
     post = db["post.files"]
-    
+    post_view=[]
     data = profile.find_one({'email': user_email})
-    posts = list(post.find({'filename': user_email})["_id"])
+    posts = list(post.find({'filename': user_email}))
+    for i in range(len(posts)):
+        post_view.append(posts[i]['_id'])
     
     name = data["username"]
     about = data["about"]
     location = f"{data['dist']}, {data['state']}, {data['country']}"
-    
+    profile_pic=db['profile_DP.files']
+    try:
+        pic_data=profile_pic.find_one({'filename': user_email})
+        image_data = pfs.get(ObjectId(pic_data['_id']))
+        image = Image.open(io.BytesIO(image_data.read()))
+        if image.mode == 'RGBA':
+            image = image.convert('RGB')
+        
+        img_io = io.BytesIO()
+        image.save(img_io, format='JPEG')
+        img_io.seek(0)
+        img_base64 = base64.b64encode(img_io.getvalue()).decode('ascii')
+        img_data = f"data:image/jpeg;base64,{img_base64}"
+    except Exception as e:
+        print(f"Error loading profile data or image: {e}")
+        img_data=url_for('static', filename='public/ellipse-32@2x.png') 
     return render_template("profile.html", 
-                           name=name, 
+                           name=name,   
                            about=about, 
                            location=location, 
-                           posts=posts)
+                           posts=post_view,
+                           image=img_data)
 @app.route("/getimg/<obj_id>")
 def getimg(obj_id):
     try:
+        fs=gridfs.GridFS(db,'post')
+        print(obj_id)
         image_data = fs.get(ObjectId(obj_id))
         image = Image.open(io.BytesIO(image_data.read()))
         
@@ -103,6 +126,7 @@ def getimg(obj_id):
         
         img_io = io.BytesIO()
         image.save(img_io, format='JPEG')
+
         img_io.seek(0)
         return send_file(img_io, mimetype='image/jpeg')
     except NoFile:
@@ -133,8 +157,12 @@ def info():
     cred={}
     try:
         username=request.form['name']
+        image=request.files['image']
+        pfs.put(image,filename=session.get('user_email')) 
         cred['username']=username
-    except:    
+    except Exception(e):
+        print("except")
+        print(e)    
         pass
     country=request.form['country']
     state=request.form['state']
@@ -153,7 +181,7 @@ def info():
     cred1['Init']='True'
     if user_email:
         status1 = logg.update_one({'email': user_email}, {"$set": cred1})
-    return render_template("home.html")
+    return redirect(url_for("profile"))
 @app.route("/addpage")
 def addpage ():
     return render_template("a-d-d-pages.html")
@@ -162,7 +190,7 @@ def upload():
     text = request.form['text']
     image = request.files['image']
     fs.put(image,filename=session.get('user_email'),text=text) 
-    return render_template("a-d-d-pages.html")
+    return redirect(url_for('profile'))
 @app.route("/addbookmark")
 def addbookmark ():
     return render_template("a-d-d-b-o-o-k-m-a-r-k.html")

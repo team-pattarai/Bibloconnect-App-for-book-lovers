@@ -13,7 +13,49 @@
     <link
       rel="stylesheet"
       href="https://fonts.googleapis.com/css2?family=Roboto:wght@400&display=swap"
-    />
+    /><title>Image and Text Upload</title>
+    <style>
+        body {
+            background-image: url('static/css/Img/login-signup.png'); 
+            background-size: cover; 
+            background-repeat: no-repeat; 
+            background-position: center; 
+            height: 100vh;
+            margin: 0;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center; 
+            font-family: Arial, sans-serif;
+        }
+        .add-bookmark1{
+            font-family: 'Arial', sans-serif;
+            font-size: 2.5rem;
+            margin-top:60px;
+            margin-bottom:100px;
+            align-items: center;
+            color: white;
+            margin-left:800px;
+
+        }
+        label, input, button {
+            margin: 5px 0;
+        }
+        .f1 {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        width: 300px; 
+        margin-top: 40px;
+        margin-bottom:200px; 
+        background-color:#9C8C76; 
+        padding: 20px; 
+        border-radius: 8px; 
+        box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        margin-left:800px;
+
+}
+    </style>
   </head>
   <body>
     <div class="add-bookmark">
@@ -31,7 +73,7 @@
         </div>
       </div>
       <section class="content1">
-        <form action="/uploadbm" method="POST" enctype="multipart/form-data">
+        <form class="f1" action="/uploadbm" method="POST" enctype="multipart/form-data">
         
           <label for="image">Upload Image:</label>
           <input type="file" id="image" name="image" accept="image/*" required>

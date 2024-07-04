@@ -1,3 +1,7 @@
+body {
+  background-color: #9C8C76;
+}
+
 .home-child {
   width: 0.313rem;
   height: 0.063rem;
@@ -83,6 +87,9 @@
 }
 
 .circle-button {
+  position: relative;
+  top: -3rem;
+  left: -3rem;
   display: block;
   width: 40px; 
   height: 40px; 
@@ -127,5 +134,97 @@
 }
 
 .large-container {
-  
+  position: relative;
+    left: 10rem;
+    top: -43rem;
+    padding: 5rem;
+    border-radius: 3rem;
+    height: 40rem;
+    width: 75rem;
+    background-color: black;
+    margin-bottom: 2vh;
+}
+
+.small-container{
+  position: relative;
+  left: -1rem;
+  top: -1rem;
+  border-radius: 1rem;
+  height: 10rem;
+  width: 68rem;
+  background-color: #007bff;
+}
+
+.prof-pic {
+  position: relative;
+    left: 1rem;
+    top: -8.5rem;
+    padding: 2.5rem;
+    border-radius: 3rem;
+    height: 2rem;
+    width: 2rem;
+    background-color: white;
+}
+
+.u-name {
+  position: relative;
+  top: -12rem;
+  left: 8rem;
+  border-radius: 2rem;
+  height: 2rem;
+  width: 15rem;
+  background-color: white;
+}
+
+.follow-btn {
+  position: relative;
+  top: -14rem;
+  left: 57rem;
+  text-size-adjust: large;
+  height: 2rem;
+  width: 4rem;
+  background-color: white;
+}
+
+.post-pic {
+  position: relative;
+}
+
+.pic-post {
+  position: relative;
+  max-width: 30rem;
+  max-height: 30rem;
+  top: -6rem;
+  left: 0rem;
+  background-color: white;
+}
+
+.desc {
+  position: relative;
+  height: 13rem;
+  width: 25rem;
+  top: -23rem;
+  left: 38rem;
+  background-color: white;
+}
+
+.like-btn{
+position: relative;
+width: 63px;
+height: 61px;
+left: 39rem;
+top: -20rem;
+background: url(static/public/ellipse-571@2x.png);
+filter: drop-shadow(0px 4px 4px rgba(186, 69, 69, 0.25));
+}
+
+.lending-btn {
+position: relative;
+position: relative;
+width: 63px;
+height: 61px;
+left: 42rem;
+top: -20rem;
+background: url();
+filter: drop-shadow(0px 4px 4px rgba(186, 69, 69, 0.25));
 }

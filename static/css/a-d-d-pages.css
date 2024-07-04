@@ -19,7 +19,9 @@
   line-height: 2.75rem;
   color: inherit;
   white-space: nowrap;
+  background-image: url(public/home@3x.png);
 }
+
 .add-page-wrapper {
   display: flex;
   flex-direction: column;
@@ -42,6 +44,7 @@
   color: inherit;
   display: inline-block;
   min-width: 5.938rem;
+  align-items:center;
 }
 .x-icon2 {
   height: 1rem;
@@ -61,6 +64,8 @@
   justify-content: center;
   padding: var(--padding-base) var(--padding-xl);
   gap: var(--space-200);
+  margin-top:800px;
+  
 }
 .button-wrapper,
 .button4,
@@ -458,4 +463,9 @@
   align-items: center;
   flex-direction: row;
   width: 100vw;
+}
+.f1 {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
 }

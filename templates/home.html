@@ -34,7 +34,7 @@
                 <nav id="menuBar">
                     <ul>
                         <li>
-                            <a href="{{ url_for('home') }}" onclick="toggleMenu(this)">
+                            <a href="{{ url_for('addbookmark') }}" onclick="toggleMenu(this)">
                                 <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor"><path d="M12 3l10 9h-3v9h-14v-9h-3z"></path></svg>
                                 <span>Home</span>
                             </a>
@@ -55,7 +55,32 @@
                 </nav>
             </div>
             <div class="large-container">
-              
+                <div class="small-container"></div>
+                <div class="prof-pic">
+                    <a href=""></a>
+                </div>
+                <div class="u-name">
+                    <a href=""></a>
+                </div>
+                <button class="follow-btn">Follow</button>
+                <div class="post-pic"><img class="pic-post" src="{{ url_for('static',filename='css/Img/home.png') }}" alt="post-picture"></div>
+                <div class="desc"></div>
+                <button class="like-btn"><img src="" alt=""></button>
+                <button class="lending-btn"><img src="" alt=""></button>
+            </div>
+            <div class="large-container">
+                <div class="small-container"></div>
+                <div class="prof-pic">
+                    <a href=""></a>
+                </div>
+                <div class="u-name">
+                    <a href=""></a>
+                </div>
+                <button class="follow-btn">Follow</button>
+                <div class="post-pic"><img class="pic-post" src="{{ url_for('static',filename='css/Img/home.png') }}" alt="post-picture"></div>
+                <div class="desc"></div>
+                <button class="like-btn"><img src="" alt=""></button>
+                <button class="lending-btn"><img src="" alt=""></button>
             </div>
         </main>
     </div>

@@ -3,14 +3,55 @@
 <head>
     <meta charset="UTF-8">
     <title>Image and Text Upload</title>
+    <style>
+        body {
+            background-image: url('static/css/Img/login-signup.png'); 
+            background-size: cover; 
+            background-repeat: no-repeat; 
+            background-position: center; 
+            height: 100vh;
+            margin: 0;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center; 
+            font-family: Arial, sans-serif;
+        }
+        .heading {
+            font-family: 'Arial', sans-serif;
+            font-size: 2.5rem;
+            margin-top:60px;
+            margin-bottom:60px;
+            align-items: center;
+            color: white;
+            margin-left:800px;
+        }
+        label, input, button {
+            margin: 5px 0;
+        }
+        .f1 {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        width: 300px; 
+        margin-bottom:20px; 
+        background-color:#9C8C76; 
+        padding: 20px; 
+        border-radius: 8px; 
+        box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        margin-left:800px;
+        margin-right:80px;
+        top: 10px;
+
+}
+    </style>
     <link rel="stylesheet" href="{{ url_for('static', filename='styles.css') }}">
 </head>
 <body>
-    <h1>Upload an Image and Enter Text</h1>
-    <form action="/upload" method="POST" enctype="multipart/form-data">
-        <label for="text">Enter Text:</label>
-        <input type="text" id="text" name="text" required>
-        <br><br>
+    <h1 class="heading">ADD PAGE</h1>
+    <form class="f1" action="/upload" method="POST" enctype="multipart/form-data">
+        <label class="description" for="text">Description:</label>
+        <textarea id="text" name="text" required></textarea>        <br><br>
         <label for="image">Upload Image:</label>
         <input type="file" id="image" name="image" accept="image/*" required>
         <br><br>
